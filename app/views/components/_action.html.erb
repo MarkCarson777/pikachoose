@@ -1,15 +1,15 @@
 <div>
   <div id="action-container">
     <div class="action">
-      <%= image_tag("pokeball.png", :class => "action-image") %>
+      <%= link_to image_tag("pokeball.png", :class => "action-image") %>
        <h1>Give</h1>
     </div>
     <div class="action">
-      <%= image_tag("pokeball.png", :class => "action-image") %>
+      <%= link_to image_tag("pokeball.png", :class => "action-image"), pokemons_path %>
       <h1>Borrow</h1>
     </div>
     <div class="action">
-      <%= image_tag("pokeball.png", :class => "action-image") %>
+      <%= link_to image_tag("pokeball.png", :class => "action-image") %>
       <h1>Battle</h1>
     </div>
   </div>
