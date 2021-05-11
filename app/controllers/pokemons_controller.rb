@@ -1,9 +1,11 @@
 class PokemonsController < ApplicationController
+   before_action :find_pokemon, only: [:show, :new, :create, :destroy]
+   
   def index
+    @pokemons = Pokemon.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
   end
@@ -18,5 +20,11 @@ class PokemonsController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def find_pokemon
+    @pokemon = Pokemon.find(params[:id])
   end
 end
