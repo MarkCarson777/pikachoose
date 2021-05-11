@@ -1,5 +1,5 @@
 class PokemonsController < ApplicationController
-   before_action :find_pokemon, only: [:show, :new, :create, :destroy]
+   before_action :find_pokemon, only: [:show, :destroy]
    
   def index
     @pokemons = Pokemon.all

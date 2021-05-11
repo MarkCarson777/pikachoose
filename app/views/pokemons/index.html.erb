@@ -3,7 +3,8 @@
   <div class="card-product-infos">
     <% @pokemons.each do |pokemon| %>
       <h2> <%= pokemon.name %> </h2>
-      <p>Product description with <strong>relevant info</strong> only.</p>
+      <p> <%= pokemon.category %> </p>
+      <p> <%= pokemon.price %> </p>
     <% end %>
   </div>
 </div>
