@@ -1,11 +1,15 @@
 // Specific CSS for your home-page
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url('/assets/pokemon.ttf');
+}
+
 .title {
+  font-family: 'Pokemon Solid';
   margin-top: -60px;
   position: relative;
   text-align: center;
   font-size: 9vw;
-  font-family: 'Pokemon Solid';
-  src: url('/assets/pokemon.ttf');
   color: #ffcb03;
   text-shadow: 8px 8px #2d69af, 12px 12px #2a447b, -5px -5px #2a447b;
 }
