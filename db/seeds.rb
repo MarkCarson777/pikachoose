@@ -6,24 +6,47 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts "cleaning database..."
+Pokemon.destroy_all
+User.destroy_all
+Booking.destroy_all
 
-puts "creating user..."
+puts "creating users..."
 
-User.create!(
-  email: "bentorama@gmail.com",
-  password: "password"
-)
+10.times do
+  User.create!(
+    email: Faker::Internet.email,
+    password: "password"
+  )
+end
 
-puts "user created"
+puts "users created"
 
 puts "creating Pokemon..."
 
-50.times do
-  Pokemon.create!(
-    name: Faker::Games::Pokemon.name,
-    category: ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon"].sample,
-    price: Faker::Number.decimal_part(digits: 3),
-    user: User.first
-  )
+@users = User.all
+
+@users.each do |user|
+  5.times do
+    Pokemon.create!(
+      name: Faker::Games::Pokemon.name,
+      category: ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon"].sample,
+      price: Faker::Number.decimal_part(digits: 3),
+      user: user
+    )
+  end
 end
-puts "finished seeding"
+
+puts "pokemon created."
+
+puts "creating bookings..."
+
+@pokemons = Pokemon.all
+@pokemons.each do |pokemon|
+    @users.each do |user|
+        Booking.create!(
+          user: user,
+          pokemon: pokemon
+        )
+    end
+end
