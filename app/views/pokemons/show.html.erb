@@ -1,2 +1,6 @@
 <h1>Pokemons#show</h1>
 <p>Find me in app/views/pokemons/show.html.erb</p>
+<p><%= link_to "Delete #{@pokemon.name}",
+            pokemon_path(@pokemon), 
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>

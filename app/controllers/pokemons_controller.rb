@@ -5,7 +5,8 @@ class PokemonsController < ApplicationController
     @pokemons = Pokemon.all
   end
 
-  def show; end
+  def show 
+  end
 
   def new
   end
@@ -20,6 +21,8 @@ class PokemonsController < ApplicationController
   end
 
   def destroy
+    @pokemon.destroy
+    redirect_to pokemons_path
   end
 
   private
