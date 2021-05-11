@@ -2,7 +2,11 @@
   justify-content: space-between;
   background: white;
   padding: 20px;
-  position: sticky;
+  top: 0;
+  height: 60px;
+  font-family: 'Exo', sans-serif;
+  background-color: white;
+  box-shadow: 0px 4px 4px #f1f2f1;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,5 +14,11 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 120px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

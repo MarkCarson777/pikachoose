@@ -11,15 +11,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
-  </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
+ </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= render "components/navbar" %>
-    <%= render "components/banner" %>
-    <%= render "components/card" %>
-    <%= yield %>
-    <%= render "components/footer" %>
+    <div class="content">
+      <%= render "components/navbar" %>
+      <%= yield %>
+      <%= render "components/footer" %>
+    </div>
   </body>
 </html>
