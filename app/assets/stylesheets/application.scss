@@ -17,3 +17,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;
+}
