@@ -1,2 +1,8 @@
 <h1>Bookings#show</h1>
 <p>Find me in app/views/bookings/show.html.erb</p>
+<p><%= link_to "Delete this booking",
+            booking_path(@booking),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>
+
+ 
