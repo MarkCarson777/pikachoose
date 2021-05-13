@@ -1,19 +1,10 @@
-<div class="cards-container">
-  <div class="card-trip">
-    <%= image_tag "flareon.jpg", alt: "flareon", width: 200 %>
-  </div>
-
-  <div class="card-trip">
-    <%= image_tag "new_gyrados.png", alt: "gyrados", width: 200 %>
-  </div>
-
-  <div class="card-trip">
-    <%= image_tag "battle.jpg", alt: "a pokemon battle", width: 200 %>
-  </div>
-</div>
-
-<div class="cards-container">
-  <p>Rent a pokemon</p>
-  <p>Hire a pokemon</p>
-  <p>Battle other trainers</p>
+<div class="card-container">
+    <% @pokemons.each do |pokemon| %>
+      <div class="pokemon-card">
+        <img src="assets/pikachu.png" />
+        <h2> <%= pokemon.name %> </h2>
+        <p> <%= pokemon.category %> </p>
+        <p> £<%= pokemon.price %> </p>
+      </div>
+    <% end %>
 </div>
