@@ -1,9 +1,11 @@
 <div class="card-container">
     <% @pokemons.each do |pokemon| %>
       <div class="pokemon-card">
-        <img src="assets/pikachu.png" />
+        <div class="img-background">
+          <%= link_to image_tag("pikachu.png"), pokemon_path(pokemon) %>
+        </div>
         <h2> <%= pokemon.name %> </h2>
-        <p> <%= pokemon.category %> </p>
+        <h3> <%= pokemon.category %> </h3>
         <p> £<%= pokemon.price %> </p>
       </div>
     <% end %>
