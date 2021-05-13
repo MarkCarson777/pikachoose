@@ -1,20 +1,11 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <a class="navbar-brand" href="#">
-    <%= image_tag "pokemon-logo.png", alt: "pokemon-logo", :class => "pokemon-logo" %>
-</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sign In</a>
-      </li>
-    </ul>
-  </div>
+<div class="navbar">
+  <%= link_to image_tag("pokemon-logo.png", alt: "pokemon-logo", :class => "pokemon-logo"), root_path %>
+  <ul class="navbar-links">
+    <li>
+      <%= link_to "Home", root_path %>
+    </li>
+    <li>
+      <%= link_to "Sign In" %>
+    </li>
+  </ul>
 </div>
