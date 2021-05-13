@@ -14,6 +14,7 @@ class PokemonsController < ApplicationController
 
   def create
     @pokemon = Pokemon.new(pokemon_params)
+    @pokemon.user = current_user
     @pokemon.save!
     redirect_to pokemon_path(@pokemon)
   end
