@@ -1,27 +1,36 @@
-.navbar-lewagon {
+.navbar {
   z-index: 1;
   position: fixed;
   width: 100%;
-  justify-content: space-between;
-  background: white;
-  padding: 20px;
-  top: 0;
-  height: 60px;
+  height: 80px;
   font-family: 'Exo', sans-serif;
+  font-size: 20px;
   background-color: white;
   box-shadow: 0px 4px 4px #f1f2f1;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar a {
+  text-decoration: none;
+  color: #919191;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 120px;
+.navbar a:hover {
+  
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links li {
+  padding-top: 12px;
+  padding-right: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.pokemon-logo {
+  width: 160px;
+  padding-left: 10px;
+  padding-bottom: 6px;
 }
