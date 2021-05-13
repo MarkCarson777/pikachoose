@@ -1,7 +1,7 @@
 <h1>Bookings#new</h1>
 <p>Find me in app/views/bookings/new.html.erb</p>
 <%= simple_form_for [ @pokemon, @booking ] do |f| %>
-  <%= f.association :user %>
+  <%= f.association :user, label_method: :email %>
   <%= f.association :pokemon %>
   <%= f.button :submit %>
 <% end %>

@@ -5,13 +5,17 @@ class PokemonsController < ApplicationController
     @pokemons = Pokemon.all
   end
 
-  def show 
+  def show
   end
 
   def new
+    @pokemon = Pokemon.new
   end
 
   def create
+    @pokemon = Pokemon.new(pokemon_params)
+    @pokemon.save
+    redirect_to pokemon_path(@pokemon)
   end
 
   def edit
@@ -29,5 +33,9 @@ class PokemonsController < ApplicationController
 
   def find_pokemon
     @pokemon = Pokemon.find(params[:id])
+  end
+
+  def pokemon_params
+    params.require(:pokemon).permit(:name, :category, :price)
   end
 end
