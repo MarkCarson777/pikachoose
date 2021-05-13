@@ -1,5 +1,5 @@
 class PokemonsController < ApplicationController
-   before_action :find_pokemon, only: [:show, :destroy]
+   before_action :find_pokemon, only: [:show, :destroy, :edit, :update]
    
   def index
     @pokemons = Pokemon.all
@@ -14,7 +14,7 @@ class PokemonsController < ApplicationController
 
   def create
     @pokemon = Pokemon.new(pokemon_params)
-    @pokemon.save
+    @pokemon.save!
     redirect_to pokemon_path(@pokemon)
   end
 
@@ -22,6 +22,8 @@ class PokemonsController < ApplicationController
   end
 
   def update
+    @pokemon.update!(pokemon_params)
+    redirect_to pokemon_path(@pokemon)
   end
 
   def destroy
