@@ -1,6 +1,10 @@
 class BookingsController < ApplicationController
   before_action :find_booking, only: [:show, :edit, :update, :destroy]
 
+  def index
+    @bookings = Booking.find(params[:pokemon_id])
+  end
+
   def show
     
     @pokemon = @booking.pokemon

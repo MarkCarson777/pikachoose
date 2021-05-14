@@ -1,6 +1,6 @@
 <h1> <%= @pokemon.name %> </h1>
+<h2>Reviews</h2>
 <% @pokemon.reviews.each do |review| %> 
-  <h2>Reviews</h2>
   <p> <%= review.content %> </p> 
 <% end %>
 
@@ -9,5 +9,8 @@
             pokemon_path(@pokemon), 
             method: :delete,
             data: { confirm: "Are you sure?" } %></p>
+
+<%= link_to "Back", pokemons_path  %>
+
 
         
