@@ -1,17 +1,25 @@
 <div id="show-container">
-<h2> <%= @pokemon.name %> </h2>
-<h3> <%= @pokemon.category %> </h3>
-<p> £<%= @pokemon.price %> </p>
-<%= link_to "Book #{@pokemon.name}", new_pokemon_booking_path(@pokemon) %>
-<%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" } %>
-<%= link_to "Back", pokemons_path %>
+  <div id="show-card">
+    <%= image_tag("pikachu.png") %>
+    <div>
+      <h2><%= @pokemon.name %></h2>
+      <h3><%= @pokemon.category %></h3>
+      <p>£<%= @pokemon.price %></p>
+      <%= link_to "Book #{@pokemon.name}", new_pokemon_booking_path(@pokemon), :class => "show-link" %>
+      <%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" }, :class => "show-link" %>
+      <%= link_to "Back", pokemons_path, :class => "show-link"  %>
+      <%= link_to "Add Review", new_pokemon_review_path(@pokemon), :class => "show-link"  %>
+    </div>
+  </div>
 </div>
-<%= link_to "Add Review", new_pokemon_review_path(@pokemon) %>
 
-<ul class="list-group">
-  <% @pokemon.reviews.each do |review| %>
-    <li class="list-group-item"><%= review.content %></li>
-    <%= link_to "Edit" %>
-    <%= link_to "Remove" %>
-  <% end %>
-</ul>
+<div id="review-container">
+  <ul class="list-group">
+    <% @pokemon.reviews.each do |review| %>
+      <%= link_to image_tag("ketchum.png", alt: "pokemon-logo", :class => "avatar-large") %>
+      <li class="list-group-item"><%= review.content %></li>
+      <%= link_to "Edit" %>
+      <%= link_to "Remove" %>
+    <% end %>
+  </ul>
+</div>
