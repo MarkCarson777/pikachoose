@@ -2,9 +2,9 @@
 <p>Find me in app/views/bookings/show.html.erb</p>
 <p><%= @booking.user.email %></p>
 <p><%= @booking.pokemon.name %></p>
+<p> <%= @booking.start_date.strftime("%m/%d") %> </p>
+<p> <%= @booking.end_date.strftime("%m/%d") %> </p>
 <p><%= link_to "Delete this booking",
             booking_path(@booking),
             method: :delete,
             data: { confirm: "Are you sure?" } %></p>
-
- 

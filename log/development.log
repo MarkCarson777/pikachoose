@@ -24000,3 +24000,1151 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 13650)
 
 
+Started GET "/" for ::1 at 2021-05-14 09:41:28 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.3ms | Allocations: 78)
+  Rendered components/_action.html.erb (Duration: 1199.5ms | Allocations: 152096)
+  Rendered pages/home.html.erb within layouts/application (Duration: 1201.0ms | Allocations: 152797)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.5ms | Allocations: 778)
+  Rendered components/_footer.html.erb (Duration: 0.1ms | Allocations: 86)
+Completed 200 OK in 1216ms (Views: 1210.3ms | ActiveRecord: 0.0ms | Allocations: 168121)
+
+
+Started GET "/" for ::1 at 2021-05-14 09:41:32 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 2.6ms | Allocations: 1518)
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1649)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.2ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 12166)
+
+
+Started GET "/" for ::1 at 2021-05-14 09:41:34 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 3.2ms | Allocations: 1509)
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1640)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 621)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 12150)
+
+
+Started GET "/" for ::1 at 2021-05-14 09:41:37 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 2.6ms | Allocations: 1509)
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1640)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 12149)
+
+
+Started GET "/" for ::1 at 2021-05-14 09:41:37 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 3.0ms | Allocations: 1507)
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 621)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 12149)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 09:46:27 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (6.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 37.5ms | Allocations: 23355)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 38.9ms | Allocations: 23703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 629)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 60ms (Views: 36.5ms | ActiveRecord: 15.6ms | Allocations: 36202)
+
+
+Started GET "/pokemons/1" for ::1 at 2021-05-14 09:46:39 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 3.4ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 40ms (Views: 31.1ms | ActiveRecord: 0.8ms | Allocations: 12045)
+
+
+Started GET "/pokemons/1" for ::1 at 2021-05-14 09:46:47 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.4ms | Allocations: 11360)
+
+
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 09:46:49 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 177.8ms | Allocations: 218657)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.3ms | Allocations: 666)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 202ms (Views: 186.3ms | ActiveRecord: 3.3ms | Allocations: 233893)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 09:48:08 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 26.0ms | Allocations: 19151)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 19251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 628)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.5ms | Allocations: 29814)
+
+
+Started GET "/pokemons/new" for ::1 at 2021-05-14 09:48:12 +0100
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 37.4ms | Allocations: 12115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 654)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.0ms | Allocations: 22886)
+
+
+Started GET "/" for ::1 at 2021-05-14 09:48:30 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 4.0ms | Allocations: 1519)
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1649)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 12156)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 09:48:34 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 23.6ms | Allocations: 19149)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 24.0ms | Allocations: 19245)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 17.4ms | Allocations: 623)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.4ms | Allocations: 29769)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3406256264832862140)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDatesToBookings (20210514085654)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.7ms)[0m  [1m[35mALTER TABLE "bookings" ADD "start_date" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "bookings" ADD "end_date" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210514085654"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3406256264832862140)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3406256264832862140)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3406256264832862140)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3406256264832862140)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDatesToBookings (20210514085654)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.3ms)[0m  [1m[35mALTER TABLE "bookings" DROP COLUMN "end_date"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "bookings" DROP COLUMN "start_date"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210514085654"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3406256264832862140)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3406256264832862140)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDatesToBookings (20210514085654)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "bookings" ADD "start_date" date[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "bookings" ADD "end_date" date[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210514085654"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3406256264832862140)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/booking/new" for ::1 at 2021-05-14 10:07:30 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/booking/new"):
+  
+actionpack (6.0.3.7) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.7) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:07:59 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1037)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.8ms | Allocations: 10453)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Bookings#new</h1>
+<p>Find me in app/views/bookings/new.html.erb</p>
+<%= simple_form_for [ @pokemon, @booking ] do |f| %>
+  <%# <%= f.association :user, label_method: :email %>
+  <%# <%= f.association :pokemon %>
+  <%= f,date_field :date %>
+  <%= f.button :submit %>
+<% end %>
+
+):
+1:    <h1>Bookings#new</h1>
+2:    <p>Find me in app/views/bookings/new.html.erb</p>
+3:    <%= simple_form_for [ @pokemon, @booking ] do |f| %>
+4:      <%# <%= f.association :user, label_method: :email %>
+5:      <%# <%= f.association :pokemon %>
+6:      <%= f,date_field :date %>
+7:      <%= f.button :submit %>
+8:    <% end %>
+  
+app/views/bookings/new.html.erb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/bookings/new.html.erb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/bookings/new.html.erb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/bookings/new.html.erb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/bookings/new.html.erb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/bookings/new.html.erb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:08:07 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 22.1ms | Allocations: 5420)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.4ms | Allocations: 7378)
+
+
+  
+ActionView::Template::Error (undefined method `date' for #<Booking:0x0000000133905838>
+Did you mean?  update):
+    3: <%= simple_form_for [ @pokemon, @booking ] do |f| %>
+    4:   <%# <%= f.association :user, label_method: :email %>
+    5:   <%# <%= f.association :pokemon %>
+    6:   <%= f.date_field :date %>
+    7:   <%= f.button :submit %>
+    8: <% end %>
+  
+app/views/bookings/new.html.erb:6
+app/views/bookings/new.html.erb:3
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:08:59 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 3072)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 5031)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for #<Booking:0x0000000146a2c438>):
+    3: <%= simple_form_for [ @pokemon, @booking ] do |f| %>
+    4:   <%# <%= f.association :user, label_method: :email %>
+    5:   <%# <%= f.association :pokemon %>
+    6:   <%= f.date_field :start_date %>
+    7:   <%= f.button :submit %>
+    8: <% end %>
+  
+app/views/bookings/new.html.erb:6
+app/views/bookings/new.html.erb:3
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:09:31 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 3037)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms | Allocations: 4994)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for #<Booking:0x0000000146fd3b48>):
+    3: <%= simple_form_for [ @pokemon, @booking ] do |f| %>
+    4:   <%# <%= f.association :user, label_method: :email %>
+    5:   <%# <%= f.association :pokemon %>
+    6:   <%= f.date_field :start_date %>
+    7:   <%= f.button :submit %>
+    8: <% end %>
+  
+app/views/bookings/new.html.erb:6
+app/views/bookings/new.html.erb:3
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:10:14 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 3037)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms | Allocations: 4994)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for #<Booking:0x0000000104b32db0>):
+    3: <%= simple_form_for [ @pokemon, @booking ] do |f| %>
+    4:   <%# <%= f.association :user, label_method: :email %>
+    5:   <%# <%= f.association :pokemon %>
+    6:   <%= f.date_field :start_date, as: :date %>
+    7:   <%= f.button :submit %>
+    8: <% end %>
+  
+app/views/bookings/new.html.erb:6
+app/views/bookings/new.html.erb:3
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:20:28 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 25.4ms | Allocations: 3037)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.9ms | Allocations: 5115)
+
+
+  
+ActionView::Template::Error (undefined method `start_date' for #<Booking:0x0000000143be8a90>):
+    3: <%= simple_form_for [ @pokemon, @booking ] do |f| %>
+    4:   <%# <%= f.association :user, label_method: :email %>
+    5:   <%# <%= f.association :pokemon %>
+    6:   <%= f.date_field :start_date %>
+    7:   <%= f.button :submit %>
+    8: <% end %>
+  
+app/views/bookings/new.html.erb:6
+app/views/bookings/new.html.erb:3
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:21:15 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 2.7ms | Allocations: 1303)
+  Rendered components/_footer.html.erb (Duration: 0.4ms | Allocations: 84)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.4ms | Allocations: 14064)
+
+
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:21:17 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"A54FObddYHuYA5qTpo6v3VCXCraGlDetI5+o+T+ixonZbzxHfHK34GCyEtH04JbPBEZV9COmLPcCcFO9h0uPBw==", "commit"=>"Create Booking", "pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+Completed 422 Unprocessable Entity in 8ms (ActiveRecord: 0.3ms | Allocations: 3618)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/bookings_controller.rb:17:in `create'
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:21:42 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"A54FObddYHuYA5qTpo6v3VCXCraGlDetI5+o+T+ixonZbzxHfHK34GCyEtH04JbPBEZV9COmLPcCcFO9h0uPBw==", "commit"=>"Create Booking", "pokemon_id"=>"1"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1288)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: booking):
+  
+app/controllers/bookings_controller.rb:44:in `booking_params'
+app/controllers/bookings_controller.rb:13:in `create'
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:22:52 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"A54FObddYHuYA5qTpo6v3VCXCraGlDetI5+o+T+ixonZbzxHfHK34GCyEtH04JbPBEZV9COmLPcCcFO9h0uPBw==", "commit"=>"Create Booking", "pokemon_id"=>"1"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1278)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: booking):
+  
+app/controllers/bookings_controller.rb:44:in `booking_params'
+app/controllers/bookings_controller.rb:13:in `create'
+Started PUT "/__web_console/repl_sessions/96d698dadfcc733a3fdd29b29bb9b5dc" for ::1 at 2021-05-14 10:22:57 +0100
+Started PUT "/__web_console/repl_sessions/96d698dadfcc733a3fdd29b29bb9b5dc" for ::1 at 2021-05-14 10:22:58 +0100
+Started PUT "/__web_console/repl_sessions/96d698dadfcc733a3fdd29b29bb9b5dc" for ::1 at 2021-05-14 10:25:51 +0100
+Started PUT "/__web_console/repl_sessions/96d698dadfcc733a3fdd29b29bb9b5dc" for ::1 at 2021-05-14 10:25:53 +0100
+Started PUT "/__web_console/repl_sessions/96d698dadfcc733a3fdd29b29bb9b5dc" for ::1 at 2021-05-14 10:25:57 +0100
+Started PUT "/__web_console/repl_sessions/96d698dadfcc733a3fdd29b29bb9b5dc" for ::1 at 2021-05-14 10:26:03 +0100
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:27:40 +0100
+  
+SyntaxError (/Users/edwardsants/code/bentorama/pikachoose/app/controllers/bookings_controller.rb:18: syntax error, unexpected ')'
+...okemon: @pokemon, start_date: )
+...                              ^
+):
+  
+app/controllers/bookings_controller.rb:18: syntax error, unexpected ')'
+app/controllers/bookings_controller.rb:18: syntax error, unexpected ')'
+app/controllers/bookings_controller.rb:18: syntax error, unexpected ')'
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:27:52 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"A54FObddYHuYA5qTpo6v3VCXCraGlDetI5+o+T+ixonZbzxHfHK34GCyEtH04JbPBEZV9COmLPcCcFO9h0uPBw==", "commit"=>"Create Booking", "pokemon_id"=>"1"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1288)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: booking):
+  
+app/controllers/bookings_controller.rb:44:in `booking_params'
+app/controllers/bookings_controller.rb:13:in `create'
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:28:01 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"A54FObddYHuYA5qTpo6v3VCXCraGlDetI5+o+T+ixonZbzxHfHK34GCyEtH04JbPBEZV9COmLPcCcFO9h0uPBw==", "commit"=>"Create Booking", "pokemon_id"=>"1"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1282)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: booking):
+  
+app/controllers/bookings_controller.rb:44:in `booking_params'
+app/controllers/bookings_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3406256264832862140)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3406256264832862140)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBooking Load (0.9ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" ORDER BY "bookings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBooking Load (1.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" ORDER BY "bookings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 505], ["LIMIT", 1]]
+  [1m[36mBooking Load (1.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:53:48 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 100.3ms | Allocations: 214723)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 1346)
+  Rendered components/_footer.html.erb (Duration: 0.2ms | Allocations: 86)
+Completed 200 OK in 169ms (Views: 142.2ms | ActiveRecord: 7.5ms | Allocations: 270847)
+
+
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:53:56 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"cQZHE+cdmm3nFGYqq6jRN6+Q57bKYdLgVN8c7dH8RighqbNTdaJUhMXL4kpun7if6O6C/avfb5f1/pJ63tnLkA==", "booking"=>{"start_date"=>"2021-05-17", "end_date"=>"2021-05-24"}, "commit"=>"Create Booking", "pokemon_id"=>"1"}
+[31mUnpermitted parameters: :start_date, :end_date[0m
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[36mBooking Create (1.1ms)[0m  [1m[32mINSERT INTO "bookings" ("user_id", "pokemon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["pokemon_id", 1], ["created_at", "2021-05-14 09:53:56.027064"], ["updated_at", "2021-05-14 09:53:56.027064"]]
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+Redirected to http://localhost:3000/pokemons/1
+Completed 302 Found in 31ms (ActiveRecord: 6.5ms | Allocations: 10460)
+
+
+Started GET "/pokemons/1" for ::1 at 2021-05-14 10:53:56 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 12342)
+
+
+Started GET "/pokemons/1" for ::1 at 2021-05-14 10:55:20 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.4ms | Allocations: 659)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.4ms | Allocations: 11411)
+
+
+Started GET "/pokemons/1/bookings/new" for ::1 at 2021-05-14 10:58:00 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 1163)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 12.6ms | ActiveRecord: 6.6ms | Allocations: 21179)
+
+
+Started POST "/pokemons/1/bookings" for ::1 at 2021-05-14 10:58:06 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"l7RKtPwSaZYvyaxIezezpdx7JAjz8U+ftMqwSipe/PPHG770bq2nfw0WKCi+ANoNmwVBQ5JP8ugV6z7dJXtxSw==", "booking"=>{"start_date"=>"2021-05-10", "end_date"=>"2021-05-21"}, "commit"=>"Create Booking", "pokemon_id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[36mBooking Create (0.6ms)[0m  [1m[32mINSERT INTO "bookings" ("user_id", "pokemon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["pokemon_id", 1], ["created_at", "2021-05-14 09:58:06.417077"], ["updated_at", "2021-05-14 09:58:06.417077"]]
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+Redirected to http://localhost:3000/pokemons/1
+Completed 302 Found in 23ms (ActiveRecord: 4.0ms | Allocations: 9323)
+
+
+Started GET "/pokemons/1" for ::1 at 2021-05-14 10:58:06 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.4ms | Allocations: 11565)
+
+
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" ORDER BY "bookings"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBooking Load (1.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+Started GET "/pokemons/1/bookings/1" for ::1 at 2021-05-14 11:24:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/pokemons/1/bookings/1"):
+  
+actionpack (6.0.3.7) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.7) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.7) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.7) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/bookings/1" for ::1 at 2021-05-14 11:24:49 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (5.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 23.5ms | Allocations: 12036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 1159)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 46ms (Views: 30.4ms | ActiveRecord: 6.7ms | Allocations: 28147)
+
+
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookings"[0m
+Started GET "/bookings/507" for ::1 at 2021-05-14 11:25:20 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"507"}
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 507], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 661)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 1.3ms | Allocations: 13102)
+
+
+Started GET "/bookings/506" for ::1 at 2021-05-14 11:27:23 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"506"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 506], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.9ms | Allocations: 12878)
+
+
+Started GET "/bookings/505" for ::1 at 2021-05-14 11:27:28 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"505"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 505], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.5ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.7ms | Allocations: 12876)
+
+
+Started GET "/bookings/504" for ::1 at 2021-05-14 11:27:37 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"504"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 504], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1588)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.5ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.7ms | Allocations: 12866)
+
+
+Started GET "/" for ::1 at 2021-05-14 11:27:46 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.7ms | Allocations: 78)
+  Rendered components/_action.html.erb (Duration: 3.7ms | Allocations: 1685)
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 13465)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 11:27:48 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 24.1ms | Allocations: 19359)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 19706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 628)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.5ms | Allocations: 30579)
+
+
+Started GET "/pokemons/5" for ::1 at 2021-05-14 11:27:50 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 1.0ms | Allocations: 11479)
+
+
+Started GET "/pokemons/5/bookings/new" for ::1 at 2021-05-14 11:27:51 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"5"}
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 559)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.9ms | Allocations: 11859)
+
+
+Started POST "/pokemons/5/bookings" for ::1 at 2021-05-14 11:27:56 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"TE1d36Qo9A+I5vPcnGEphsjTA9kZJDj/mJpnIhtnzqoTnr+E6pOlhS3Cx9bGOXRK6lBxKKYclUtYDb0br/UVVA==", "booking"=>{"start_date"=>"2021-05-03", "end_date"=>"2021-05-06"}, "commit"=>"Create Booking", "pokemon_id"=>"5"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[36mBooking Create (2.5ms)[0m  [1m[32mINSERT INTO "bookings" ("user_id", "pokemon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["pokemon_id", 5], ["created_at", "2021-05-14 10:27:56.688686"], ["updated_at", "2021-05-14 10:27:56.688686"]]
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+Redirected to http://localhost:3000/pokemons/5
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms | Allocations: 4460)
+
+
+Started GET "/pokemons/5" for ::1 at 2021-05-14 11:27:56 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.4ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.3ms | Allocations: 11384)
+
+
+Started GET "/bookings/508" for ::1 at 2021-05-14 11:28:05 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"508"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 508], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.2ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.7ms | Allocations: 12889)
+
+
+Started GET "/bookings/508" for ::1 at 2021-05-14 11:30:38 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"508"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 508], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.7ms | Allocations: 801)
+  Rendered components/_footer.html.erb (Duration: 0.4ms | Allocations: 84)
+Completed 200 OK in 48ms (Views: 39.7ms | ActiveRecord: 1.0ms | Allocations: 14553)
+
+
+Started GET "/bookings/508" for ::1 at 2021-05-14 11:30:49 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"508"}
+  [1m[36mBooking Load (0.2ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 508], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:39:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.6ms | Allocations: 801)
+  Rendered components/_footer.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.8ms | Allocations: 14564)
+
+
+Started GET "/" for ::1 at 2021-05-14 11:31:13 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered components/_action.html.erb (Duration: 1.7ms | Allocations: 2159)
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2732)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 770)
+  Rendered components/_footer.html.erb (Duration: 0.1ms | Allocations: 84)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 14988)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 11:31:16 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 27.8ms | Allocations: 23090)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 29.2ms | Allocations: 23430)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 632)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 56ms (Views: 34.0ms | ActiveRecord: 6.7ms | Allocations: 35882)
+
+
+Started GET "/pokemons/3" for ::1 at 2021-05-14 11:31:17 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.6ms | Allocations: 11773)
+
+
+Started GET "/pokemons/3/bookings/new" for ::1 at 2021-05-14 11:31:20 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 56ms (Views: 22.5ms | ActiveRecord: 3.9ms | Allocations: 16724)
+
+
+Started POST "/pokemons/3/bookings" for ::1 at 2021-05-14 11:31:25 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"gSKRBd73YI8cEg4g7CY9Jy/m50YPElGlv/IKXKwT6dQEQbM4hAa+yvF79FjTvgMXHjtmhZjEQcs5cigon/fw8g==", "booking"=>{"start_date"=>"2021-05-03", "end_date"=>"2021-05-14"}, "commit"=>"Create Booking", "pokemon_id"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 808)
+
+
+  
+RuntimeError ():
+  
+app/controllers/bookings_controller.rb:13:in `create'
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:31:33 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:31:35 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:31:39 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:31:41 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:32:00 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:32:12 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:32:27 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:32:44 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:32:50 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:32:54 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:33:07 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:33:29 +0100
+Started PUT "/__web_console/repl_sessions/6fd52b7c26d586ec8a3258efdb8abd22" for ::1 at 2021-05-14 11:34:15 +0100
+Started POST "/pokemons/3/bookings" for ::1 at 2021-05-14 11:34:31 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"sZtFUgF0879W70w8uHdLAkxz1ss12IftUrPRAiSOFwNranwsylskJK5exH7qGXIQGKKJiZDqnLdzXCpGnGdejQ==", "booking"=>{"start_date"=>"2021-05-03", "end_date"=>"2021-05-14"}, "commit"=>"Create Booking", "pokemon_id"=>"3"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[36mBooking Create (0.7ms)[0m  [1m[32mINSERT INTO "bookings" ("user_id", "pokemon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["pokemon_id", 3], ["created_at", "2021-05-14 10:34:32.062283"], ["updated_at", "2021-05-14 10:34:32.062283"]]
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+Redirected to http://localhost:3000/pokemons/3
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 10.6ms | Allocations: 18335)
+
+
+  
+RuntimeError ():
+  
+app/controllers/bookings_controller.rb:23:in `create'
+Started PUT "/__web_console/repl_sessions/b78749f2a5a505e7941a57f6176eaf3d" for ::1 at 2021-05-14 11:34:34 +0100
+Started PUT "/__web_console/repl_sessions/b78749f2a5a505e7941a57f6176eaf3d" for ::1 at 2021-05-14 11:34:34 +0100
+Started POST "/pokemons/3/bookings" for ::1 at 2021-05-14 11:35:09 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"sZtFUgF0879W70w8uHdLAkxz1ss12IftUrPRAiSOFwNranwsylskJK5exH7qGXIQGKKJiZDqnLdzXCpGnGdejQ==", "booking"=>{"start_date"=>"2021-05-03", "end_date"=>"2021-05-14"}, "commit"=>"Create Booking", "pokemon_id"=>"3"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[36mBooking Create (0.4ms)[0m  [1m[32mINSERT INTO "bookings" ("user_id", "pokemon_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 11], ["pokemon_id", 3], ["created_at", "2021-05-14 10:35:09.113253"], ["updated_at", "2021-05-14 10:35:09.113253"]]
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:18:in `create'
+Redirected to http://localhost:3000/pokemons/3
+Completed 302 Found in 27ms (ActiveRecord: 10.0ms | Allocations: 17834)
+
+
+Started GET "/pokemons/3" for ::1 at 2021-05-14 11:35:09 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 1162)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 12395)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookings"[0m
+Started GET "/bookings/510" for ::1 at 2021-05-14 11:35:26 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"510"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 510], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:40:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2088)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.2ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.8ms | Allocations: 13792)
+
+
+Started GET "/" for ::1 at 2021-05-14 11:37:25 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 1.7ms | Allocations: 2017)
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.4ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 12784)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 11:37:27 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 37.3ms | Allocations: 22687)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 38.0ms | Allocations: 22789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 628)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 67ms (Views: 59.8ms | ActiveRecord: 3.6ms | Allocations: 34488)
+
+
+Started GET "/pokemons/6" for ::1 at 2021-05-14 11:37:29 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.2ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.5ms | Allocations: 11482)
+
+
+Started GET "/pokemons/6/bookings/new" for ::1 at 2021-05-14 11:37:30 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"6"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 37ms (Views: 21.8ms | ActiveRecord: 2.9ms | Allocations: 16022)
+
+
+Started POST "/pokemons/6/bookings" for ::1 at 2021-05-14 11:37:36 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"T8SfLxRdchRCqIWrdgfLQBL7t49fjtZstyRq0lh+/qBJjMhpfizRGsjm2pzR2nXxylwij1nC+giDxXc6EOFoEg==", "booking"=>{"start_date"=>"2021-05-03", "end_date"=>"2021-05-10"}, "commit"=>"Create Booking", "pokemon_id"=>"6"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+Completed 422 Unprocessable Entity in 20ms (ActiveRecord: 3.0ms | Allocations: 7941)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Pokemon must exist):
+  
+app/controllers/bookings_controller.rb:19:in `create'
+Started POST "/pokemons/6/bookings" for ::1 at 2021-05-14 11:37:47 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"YFZshjeFjiBvXFZrNdfUFFBvxgp4FJ1pEHzez5q/itS6p1X4/KpZu5ft3ilnue0GBL6ZSN0mhjMxkyWLIlbDWg==", "booking"=>{"start_date"=>"2021-05-03", "end_date"=>"2021-05-10"}, "commit"=>"Create Booking", "pokemon_id"=>"6"}
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:19:in `create'
+  [1m[36mBooking Create (0.4ms)[0m  [1m[32mINSERT INTO "bookings" ("user_id", "pokemon_id", "created_at", "updated_at", "start_date", "end_date") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 11], ["pokemon_id", 6], ["created_at", "2021-05-14 10:37:47.606525"], ["updated_at", "2021-05-14 10:37:47.606525"], ["start_date", "2021-05-03"], ["end_date", "2021-05-10"]]
+  ↳ app/controllers/bookings_controller.rb:19:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:19:in `create'
+Redirected to http://localhost:3000/pokemons/6
+Completed 302 Found in 27ms (ActiveRecord: 9.9ms | Allocations: 17951)
+
+
+Started GET "/pokemons/6" for ::1 at 2021-05-14 11:37:47 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 1162)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 12387)
+
+
+Started GET "/pokemons/6" for ::1 at 2021-05-14 11:37:56 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.7ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.2ms | Allocations: 11378)
+
+
+Started GET "/bookings/511" for ::1 at 2021-05-14 11:38:09 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"511"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 511], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:41:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1953)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.7ms | Allocations: 13525)
+
+
+Started GET "/bookings/511" for ::1 at 2021-05-14 11:39:19 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"511"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 511], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:41:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1763)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.8ms | Allocations: 801)
+  Rendered components/_footer.html.erb (Duration: 0.5ms | Allocations: 84)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.8ms | Allocations: 14593)
+
+
+Started GET "/bookings/511" for ::1 at 2021-05-14 11:43:35 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"511"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 511], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:41:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 16.4ms | Allocations: 11628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 1301)
+  Rendered components/_footer.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 42ms (Views: 22.5ms | ActiveRecord: 11.7ms | Allocations: 29453)
+
+
+Started GET "/bookings/511" for ::1 at 2021-05-14 11:45:40 +0100
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"511"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 511], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:41:in `find_booking'
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:3
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:4
+  Rendered bookings/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.8ms | Allocations: 801)
+  Rendered components/_footer.html.erb (Duration: 0.4ms | Allocations: 84)
+Completed 200 OK in 41ms (Views: 35.9ms | ActiveRecord: 1.1ms | Allocations: 14592)
+
+
