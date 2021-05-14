@@ -1,16 +1,9 @@
-<h1> <%= @pokemon.name %> </h1>
-<h2>Reviews</h2>
-<% @pokemon.reviews.each do |review| %> 
-  <p> <%= review.content %> </p> 
-<% end %>
-
-<p><%= link_to "Book this pokemon", new_pokemon_booking_path(@pokemon)  %></p>
-<p><%= link_to "Delete #{@pokemon.name}",
-            pokemon_path(@pokemon), 
-            method: :delete,
-            data: { confirm: "Are you sure?" } %></p>
-
-<%= link_to "Back", pokemons_path  %>
-
-
+<div id="show-container">
+<h2> <%= @pokemon.name %> </h2>
+<h3> <%= @pokemon.category %> </h3>
+<p> £<%= @pokemon.price %> </p>
+<%= link_to "Book #{@pokemon.name}", new_pokemon_booking_path(@pokemon) %>
+<%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "Back", pokemons_path %>
+</div>
         
