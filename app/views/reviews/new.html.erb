@@ -1,0 +1,6 @@
+<h1>Review#new</h1>
+<p>Find me in app/views/reviews/new.html.erb</p>
+<%= simple_form_for [ @pokemon, @review ] do |f| %>
+  <%= f.input :content %>
+  <%= f.button :submit %>
+<% end %>
