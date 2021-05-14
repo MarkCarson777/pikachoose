@@ -25247,3 +25247,11 @@ FOREIGN KEY ("pokemon_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3406256264832862140)[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBooking Load (1.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user)[0m
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBooking Load (1.7ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user)[0m
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBooking Load (1.7ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user)[0m
+  [1m[36mBooking Load (0.8ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBooking Load (3.1ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBooking Load (1.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings" WHERE (user_id = current_user)[0m
