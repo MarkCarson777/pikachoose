@@ -28985,3 +28985,594 @@ Processing by PokemonsController#show as HTML
 Completed 200 OK in 1069ms (Views: 1063.9ms | ActiveRecord: 1.3ms | Allocations: 94356)
 
 
+Started GET "/" for ::1 at 2021-05-14 15:25:42 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 4.8ms | Allocations: 1511)
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 621)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 12435)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:25:47 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 31.5ms | Allocations: 19153)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 19248)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 623)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.7ms | Allocations: 30060)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 15:26:01 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.5ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.7ms | Allocations: 11666)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:26:05 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.7ms | Allocations: 12862)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:26:26 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 451)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 658)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 33ms (Views: 26.9ms | ActiveRecord: 0.6ms | Allocations: 12009)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:21 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.4ms | Allocations: 807)
+  Rendered components/_footer.html.erb (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.8ms | Allocations: 13765)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:22 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 460)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.7ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 0.6ms | Allocations: 12052)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:33 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 2.0ms | Allocations: 802)
+  Rendered components/_footer.html.erb (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.4ms | Allocations: 13732)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:34 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 460)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.6ms | Allocations: 663)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 0.8ms | Allocations: 12018)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:49 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1604)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.7ms | Allocations: 3967)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pokemons", :pokemon_id=>"250"}, missing required keys: [:id]):
+     7:   <%= f.date_field :end_date %>
+     8:   <%= f.button :submit %>
+     9: <% end %>
+    10: <%= link_to "Back", pokemon_path %>
+  
+app/views/bookings/new.html.erb:10
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:56 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.8ms | Allocations: 806)
+  Rendered components/_footer.html.erb (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.5ms | Allocations: 13859)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:58 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 537)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 659)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.6ms | Allocations: 12101)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:28:59 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 524)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 658)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.6ms | Allocations: 12085)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:29:00 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 524)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 658)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.3ms | Allocations: 12077)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:29:02 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 524)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 658)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.3ms | Allocations: 12087)
+
+
+Started GET "/pokemons/250/bookings/new" for ::1 at 2021-05-14 15:34:03 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"250"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.6ms | Allocations: 802)
+  Rendered components/_footer.html.erb (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.3ms | Allocations: 13734)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 15:34:06 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.4ms | Allocations: 12502)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:34:09 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 26.7ms | Allocations: 19332)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 28.6ms | Allocations: 19667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 628)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.5ms | Allocations: 30634)
+
+
+Started GET "/pokemons/new" for ::1 at 2021-05-14 15:34:11 +0100
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 41.8ms | Allocations: 11703)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 654)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.0ms | Allocations: 22724)
+
+
+Started GET "/" for ::1 at 2021-05-14 15:34:24 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.6ms | Allocations: 76)
+  Rendered components/_action.html.erb (Duration: 5.2ms | Allocations: 1662)
+  Rendered pages/home.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 627)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 13724)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:34:27 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 34.4ms | Allocations: 19152)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 34.9ms | Allocations: 19252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 628)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.7ms | Allocations: 30074)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 15:34:30 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 658)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.4ms | Allocations: 11673)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:34:32 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (2.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 29.6ms | Allocations: 19147)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 30.1ms | Allocations: 19242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 627)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 2.3ms | Allocations: 30077)
+
+
+Started GET "/" for ::1 at 2021-05-14 15:34:33 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 4.1ms | Allocations: 1511)
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.6ms | Allocations: 621)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 12440)
+
+
+Started GET "/" for ::1 at 2021-05-14 15:34:54 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 5.0ms | Allocations: 1507)
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 621)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 12441)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:37:52 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 29.5ms | Allocations: 19328)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 19668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.2ms | Allocations: 767)
+  Rendered components/_footer.html.erb (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.8ms | Allocations: 32029)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 15:37:57 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (2.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 2.4ms | Allocations: 11978)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:38:00 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 28.8ms | Allocations: 19150)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 29.2ms | Allocations: 19246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 623)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 1.1ms | Allocations: 30077)
+
+
+Started GET "/pokemons/203" for ::1 at 2021-05-14 15:38:03 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"203"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 203], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.4ms | Allocations: 11664)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:44:31 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (1.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 33.6ms | Allocations: 19250)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 19345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 628)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 1.8ms | Allocations: 30192)
+
+
+Started GET "/" for ::1 at 2021-05-14 15:44:32 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.6ms | Allocations: 76)
+  Rendered components/_action.html.erb (Duration: 7.0ms | Allocations: 1662)
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 13700)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:48:37 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 32.1ms | Allocations: 19152)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 19252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 632)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.7ms | Allocations: 30083)
+
+
+Started GET "/pokemons/249" for ::1 at 2021-05-14 15:49:18 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"249"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 249], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.8ms | Allocations: 11696)
+
+
+Started GET "/pokemons/249/bookings/new" for ::1 at 2021-05-14 15:49:20 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"249"}
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 249], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 636)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 667)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 0.7ms | Allocations: 12887)
+
+
+Started GET "/pokemons/249" for ::1 at 2021-05-14 15:49:25 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"249"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 249], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 662)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.5ms | Allocations: 11694)
+
+
+Started GET "/pokemons/249/bookings/new" for ::1 at 2021-05-14 15:49:28 +0100
+Processing by BookingsController#new as HTML
+  Parameters: {"pokemon_id"=>"249"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 249], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:8:in `new'
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 451)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 658)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.5ms | Allocations: 12011)
+
+
+Started POST "/pokemons/249/bookings" for ::1 at 2021-05-14 15:49:29 +0100
+Processing by BookingsController#create as HTML
+  Parameters: {"authenticity_token"=>"n0+ZaP/WFSOMeJ/ik2llblDDTWwnYfzolGIh1mw/U2bCNQ/ljU0IX8veQVPV8yacI0KsPss20jABs8xUSY76qA==", "booking"=>{"start_date"=>"", "end_date"=>""}, "commit"=>"Create Booking", "pokemon_id"=>"249"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 249], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:14:in `create'
+Completed 422 Unprocessable Entity in 13ms (ActiveRecord: 0.4ms | Allocations: 3961)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: User must exist):
+  
+app/controllers/bookings_controller.rb:19:in `create'
+Started GET "/pokemons/249" for ::1 at 2021-05-14 15:49:53 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"249"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 249], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 661)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.4ms | Allocations: 11702)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:50:00 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 30.7ms | Allocations: 19151)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 19247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 623)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.6ms | Allocations: 30061)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 15:50:43 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 1.0ms | Allocations: 11672)
+
+
+Started GET "/" for ::1 at 2021-05-14 15:50:56 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered components/_action.html.erb (Duration: 3.2ms | Allocations: 1520)
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1650)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 622)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 12455)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:54:54 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 40.2ms | Allocations: 19152)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 40.6ms | Allocations: 19247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 627)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.7ms | Allocations: 30109)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 15:54:56 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 657)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.5ms | Allocations: 11664)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:58:20 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 36.7ms | Allocations: 19147)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 37.7ms | Allocations: 19242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 623)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 1.1ms | Allocations: 30066)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 15:59:55 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 26.9ms | Allocations: 19328)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 28.5ms | Allocations: 19666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.3ms | Allocations: 722)
+  Rendered components/_footer.html.erb (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.7ms | Allocations: 31982)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-05-14 15:59:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/markcarson/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/markcarson/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 588)
+  Rendered /Users/markcarson/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 612)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 49ms (Views: 23.8ms | ActiveRecord: 15.4ms | Allocations: 20038)
+
+
