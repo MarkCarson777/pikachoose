@@ -6,4 +6,4 @@
 <%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" } %>
 <%= link_to "Back", pokemons_path %>
 </div>
-        
+<%= link_to "Add Review", new_pokemon_review_path(@pokemon) %>
