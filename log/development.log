@@ -29576,3 +29576,119 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 49ms (Views: 23.8ms | ActiveRecord: 15.4ms | Allocations: 20038)
 
 
+Started GET "/users/sign_in" for ::1 at 2021-05-14 16:01:33 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 509)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 9450)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.4ms | Allocations: 750)
+  Rendered components/_footer.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 22499)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-05-14 16:01:43 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 118)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 7141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.7ms | Allocations: 610)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 18903)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-05-14 16:01:47 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.2ms | Allocations: 8625)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 610)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 19714)
+
+
+Started GET "/users/password/new" for ::1 at 2021-05-14 16:01:48 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3567)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 610)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 15271)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-05-14 16:01:53 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 6539)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.0ms | Allocations: 610)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 17563)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:01:54 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 2.2ms | Allocations: 76)
+  Rendered components/_action.html.erb (Duration: 8.9ms | Allocations: 1664)
+  Rendered pages/home.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.9ms | Allocations: 584)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 13657)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-05-14 16:02:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 509)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.5ms | Allocations: 9345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.2ms | Allocations: 746)
+  Rendered components/_footer.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 22333)
+
+
+Started GET "/" for ::1 at 2021-05-14 16:02:26 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered components/_banner.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered components/_action.html.erb (Duration: 3.4ms | Allocations: 1658)
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.6ms | Allocations: 582)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 13636)
+
+
+Started GET "/pokemons" for ::1 at 2021-05-14 16:02:28 +0100
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/views/components/_card.html.erb:2
+  Rendered components/_card.html.erb (Duration: 33.3ms | Allocations: 19434)
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 35.8ms | Allocations: 19769)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 0.8ms | Allocations: 586)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 1.7ms | Allocations: 31242)
+
+
+Started GET "/pokemons/250" for ::1 at 2021-05-14 16:02:29 +0100
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"250"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/pokemons_controller.rb:38:in `find_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered components/_navbar.html.erb (Duration: 1.1ms | Allocations: 612)
+  Rendered components/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.7ms | Allocations: 11960)
+
+
