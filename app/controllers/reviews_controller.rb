@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
 
     @review.pokemon = @pokemon
     if @review.save!
-      redirect_to pokemons_path
+      redirect_to pokemon_path(@pokemon)
     else
       render :new
     end
