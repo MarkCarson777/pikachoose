@@ -2,6 +2,8 @@ class BookingsController < ApplicationController
   before_action :find_booking, only: [:show, :edit, :update, :destroy]
 
   def show
+    
+    @pokemon = @booking.pokemon
   end
 
   def new
@@ -17,7 +19,7 @@ class BookingsController < ApplicationController
 
     @booking.pokemon = @pokemon
     if @booking.save!
-    redirect_to pokemon_path(@pokemon)
+    redirect_to booking_path(@booking)
     else
       render :new
     end

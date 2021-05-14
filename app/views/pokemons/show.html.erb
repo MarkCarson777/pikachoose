@@ -1,8 +1,13 @@
-<h1>Pokemons#show</h1>
-<p>Find me in app/views/pokemons/show.html.erb</p>
+<h1> <%= @pokemon.name %> </h1>
+<% @pokemon.reviews.each do |review| %> 
+  <h2>Reviews</h2>
+  <p> <%= review.content %> </p> 
+<% end %>
+
 <p><%= link_to "Book this pokemon", new_pokemon_booking_path(@pokemon)  %></p>
 <p><%= link_to "Delete #{@pokemon.name}",
             pokemon_path(@pokemon), 
             method: :delete,
             data: { confirm: "Are you sure?" } %></p>
+
         
