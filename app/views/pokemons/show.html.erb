@@ -1,7 +1,9 @@
+<div id="show-container">
 <h2> <%= @pokemon.name %> </h2>
 <h3> <%= @pokemon.category %> </h3>
 <p> £<%= @pokemon.price %> </p>
 <%= link_to "Book #{@pokemon.name}", new_pokemon_booking_path(@pokemon) %>
 <%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" } %>
 <%= link_to "Back", pokemons_path %>
+</div>
         
