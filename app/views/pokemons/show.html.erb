@@ -11,5 +11,7 @@
 <ul class="list-group">
   <% @pokemon.reviews.each do |review| %>
     <li class="list-group-item"><%= review.content %></li>
+    <%= link_to "Edit" %>
+    <%= link_to "Remove" %>
   <% end %>
 </ul>
