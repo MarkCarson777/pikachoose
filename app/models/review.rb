@@ -1,5 +1,3 @@
 class Review < ApplicationRecord
-  belongs_to :pokemon
-  
-  validates :content, presence: true
+  belongs_to :booking
 end

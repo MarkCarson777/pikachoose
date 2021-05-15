@@ -1,19 +1,20 @@
 class ReviewsController < ApplicationController
-  before_action :find_review, :find_pokemon, only: [:new, :create, :destroy, :edit, :update]
+  before_action :find_review, only: [:destroy, :edit, :update]
   def index
     @reviews = Review.where(user: current_user)
   end
   
   def new
     @review = Review.new
+    @booking = Booking.find(params[:booking_id])
   end
 
   def create
     @review = Review.new(review_params)
-
-    @review.pokemon = @pokemon
+    @booking = Booking.find(params[:booking_id])
+    @review.booking = @booking
     if @review.save!
-      redirect_to pokemon_path(@pokemon)
+      redirect_to bookings_path
     else
       render :new
     end
@@ -23,7 +24,7 @@ class ReviewsController < ApplicationController
 
   def update
     @review.update!(review_params)
-    redirect_to pokemon_path(@pokemon)
+    redirect_to bookings_path
   end
 
 private
@@ -33,12 +34,6 @@ private
   end
 
   def review_params
-    params.require(:review).permit(:pokemon_id, :content)
+    params.require(:review).permit(:booking_id, :content)
   end
-
-  def find_pokemon
-     @pokemon = Pokemon.find(params[:pokemon_id])
-  end
-
-
 end
