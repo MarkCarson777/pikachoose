@@ -19,8 +19,6 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @pokemon = Pokemon.find(params[:pokemon_id])
     @booking.user = current_user
-    # @booking = Booking.new(user: current_user, pokemon: @pokemon)
-
     @booking.pokemon = @pokemon
     if @booking.save!
     redirect_to booking_path(@booking)
@@ -33,6 +31,12 @@ class BookingsController < ApplicationController
   end
 
   def update
+    @booking = Booking.update!(booking_params)
+    if @booking.save!
+    redirect_to booking_path(@booking)
+    else
+      render :new
+    end
   end
 
   def destroy
