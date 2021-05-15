@@ -6,4 +6,6 @@ class Pokemon < ApplicationRecord
   validates :category, inclusion: { in: CATEGORIES, message: "%{value} is not a valid category" }
   validates :name, :category, :user_id, presence: true
   has_one_attached :photo
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end
