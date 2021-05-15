@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   padding-bottom: 80px;
   justify-content: space-evenly;
+  text-decoration: none;
 }
 
 .pokemon-card {
@@ -12,6 +13,7 @@
   border-radius: 8px;
   border-style: solid;
   border-color: white;
+  text-decoration: none;
 
 
   img {
@@ -32,12 +34,17 @@
     padding-top: 16px;
     font-family: 'Exo', sans-serif;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
   }
 
   h3 {
     margin-left: 16px;
     font-family: 'Exo', sans-serif;
     font-size: 20px;
+    text-decoration: none;
+    color: black;
+
   }
 
   p {
@@ -46,6 +53,8 @@
     font-weight: bold;
     font-size: 24px;
     float: right;
+    text-decoration: none;
+    color: black;
   }
 }
 

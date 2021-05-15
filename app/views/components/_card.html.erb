@@ -1,6 +1,7 @@
 <div class="card-container">
     <% @pokemons.each do |pokemon| %>
       <div class="pokemon-card">
+        <%= link_to pokemon_path(pokemon) do %>
         <div class="img-background">
           <%= cl_image_tag pokemon.photo.key if pokemon.photo.attached? %>
         </div>
@@ -8,5 +9,6 @@
         <h3> <%= pokemon.category %> </h3>
         <p> £<%= pokemon.price %> </p>
       </div>
+    <% end %>
     <% end %>
 </div>
