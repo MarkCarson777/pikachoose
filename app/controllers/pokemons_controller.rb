@@ -5,6 +5,10 @@ class PokemonsController < ApplicationController
     @pokemons = Pokemon.all
   end
 
+  def my_pokemon
+    @pokemons = Pokemon.where(user: current_user)
+  end
+
   def show
   end
 

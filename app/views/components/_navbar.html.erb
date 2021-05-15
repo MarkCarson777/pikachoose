@@ -4,10 +4,13 @@
     <li>
       <%= link_to "Home", root_path %>
     </li>
-    <li>
-      <%= link_to "My bookings", bookings_path %>
-    </li>
     <% if user_signed_in? %>
+      <li>
+        <%= link_to "My Pokemon", my_pokemon_pokemons_path %>
+      </li>
+      <li>
+        <%= link_to "My Bookings", bookings_path %>
+      </li>
       <li>
       <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
       </li>
