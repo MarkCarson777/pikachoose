@@ -1,9 +1,9 @@
-.hero-image {
-  background-image: url("banner-two.png");
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-  margin-top: 90px;
+.container {
+  display: flex;
+  justify-content: center;
 }
+
+.hero-image {
+  height: 500px;
+  margin-top: 90px;
+ }
