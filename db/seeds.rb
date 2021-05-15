@@ -46,7 +46,12 @@ puts "creating bookings..."
     @users.each do |user|
         Booking.create!(
           user: user,
-          pokemon: pokemon
+          pokemon: pokemon,
+          start_date: DateTime.new(2009,9,1,17),
+          end_date: DateTime.new(2009,9,1,19)
         )
     end
 end
+
+puts "created bookings!"
+puts "all done - wahey!"
