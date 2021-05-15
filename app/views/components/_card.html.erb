@@ -2,7 +2,7 @@
     <% @pokemons.each do |pokemon| %>
       <div class="pokemon-card">
         <div class="img-background">
-          <%= link_to image_tag("pikachu.png"), pokemon_path(pokemon) %>
+          <%= cl_image_tag pokemon.photo.key if pokemon.photo.attached? %>
         </div>
         <h2> <%= pokemon.name %> </h2>
         <h3> <%= pokemon.category %> </h3>
