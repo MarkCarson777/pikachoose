@@ -1,8 +1,8 @@
-<h1>Pokemons#edit</h1>
-<p>Find me in app/views/pokemons/edit.html.erb</p>
+<h1>Edit</h1>
 <%= simple_form_for(@pokemon) do |f| %>
   <%= f.input :name %>
   <%= f.input :category, :collection => %w[Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon] %>
   <%= f.input :price %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
