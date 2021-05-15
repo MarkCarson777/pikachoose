@@ -1,5 +1,9 @@
 class ReviewsController < ApplicationController
   before_action :find_review, :find_pokemon, only: [:new, :create, :destroy, :edit, :update]
+  def index
+    @reviews = Review.where(user: current_user)
+  end
+  
   def new
     @review = Review.new
   end
