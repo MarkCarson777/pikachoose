@@ -6,7 +6,6 @@ class BookingsController < ApplicationController
   end
 
   def show
-
     @pokemon = @booking.pokemon
   end
 
@@ -37,7 +36,7 @@ class BookingsController < ApplicationController
 
   def destroy
     @booking.destroy
-    redirect_to pokemon_path(@booking.pokemon)
+    redirect_to pokemons_path
   end
 
   private
