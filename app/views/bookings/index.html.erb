@@ -1,4 +1,4 @@
 <h2>My bookings</h2>
 <% @bookings.each do |booking| %>
-  <p> <%= link_to booking.pokemon.name , booking_path(booking) %>  </p>
+  <p> <%= link_to booking.pokemon.name , booking_path(booking) %> </p>
 <% end %>

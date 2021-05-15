@@ -18,7 +18,7 @@
     <% @pokemon.reviews.each do |review| %>
       <%= link_to image_tag("ketchum.png", alt: "pokemon-logo", :class => "avatar-large") %>
       <li class="list-group-item"><%= review.content %></li>
-      <%= link_to "Edit" %>
+      <%= link_to "Edit",  edit_pokemon_review_path(review) %>
       <%= link_to "Remove" %>
       <%= link_to "Delete" %>
     <% end %>
