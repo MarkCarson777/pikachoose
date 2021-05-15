@@ -21,7 +21,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.pokemon = @pokemon
     if @booking.save!
-    redirect_to booking_path(@booking)
+      redirect_to booking_path(@booking)
     else
       render :new
     end
@@ -31,12 +31,8 @@ class BookingsController < ApplicationController
   end
 
   def update
-    @booking = Booking.update!(booking_params)
-    if @booking.save!
+    @booking.update(booking_params)
     redirect_to booking_path(@booking)
-    else
-      render :new
-    end
   end
 
   def destroy
