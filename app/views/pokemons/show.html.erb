@@ -1,6 +1,6 @@
 <div id="show-container">
   <div id="show-card">
-    <%= cl_image_tag @pokemon.photo.key, height: 300, width: 400, crop: :fill %>
+    <%= cl_image_tag @pokemon.photo.key if @pokemon.photo.attached? %>
     <div>
       <h2><%= @pokemon.name %></h2>
       <h3><%= @pokemon.category %></h3>
