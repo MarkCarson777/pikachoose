@@ -6,9 +6,9 @@
       <h3><%= @pokemon.category %></h3>
       <p>£<%= @pokemon.price %></p>
       <%= link_to "Book #{@pokemon.name}", new_pokemon_booking_path(@pokemon), :class => "show-link" %>
+      <%= link_to "Edit #{@pokemon.name}", edit_pokemon_path(@pokemon), :class => "show-link" %>
       <%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" }, :class => "show-link" %>
-      <%= link_to "Back", pokemons_path, :class => "show-link"  %>
-      <%= link_to "Add Review", new_pokemon_review_path(@pokemon), :class => "show-link"  %>
+      <%= link_to "Back to list", pokemons_path, :class => "show-link"  %>
     </div>
   </div>
 </div>
@@ -20,6 +20,7 @@
       <li class="list-group-item"><%= review.content %></li>
       <%= link_to "Edit" %>
       <%= link_to "Remove" %>
+      <%= link_to "Delete" %>
     <% end %>
   </ul>
 </div>
