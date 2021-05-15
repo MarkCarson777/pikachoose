@@ -5,4 +5,5 @@ class Pokemon < ApplicationRecord
   has_many :reviews, through: :bookings, dependent: :destroy
   validates :category, inclusion: { in: CATEGORIES, message: "%{value} is not a valid category" }
   validates :name, :category, :user_id, presence: true
+  has_one_attached :photo
 end
