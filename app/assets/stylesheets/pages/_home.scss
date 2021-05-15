@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 @font-face {
   font-family: 'Pokemon Solid';
-  src: url('/assets/pokemon.ttf');
+  src: asset-url('pokemon.ttf');
 }
 
 .title {
