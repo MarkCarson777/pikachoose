@@ -14,7 +14,7 @@ class ReviewsController < ApplicationController
     @booking = Booking.find(params[:booking_id])
     @review.booking = @booking
     if @review.save!
-      redirect_to bookings_path
+      redirect_to pokemon_path(@booking.pokemon_id)
     else
       render :new
     end
