@@ -2,6 +2,7 @@
   display:flex;
   overflow: scroll;
   flex-wrap: wrap;
+  margin: 10px;
   padding-bottom: 80px;
   justify-content: space-evenly;
   text-decoration: none;
@@ -20,7 +21,6 @@
     align-content: center;
     width: 380px;
     margin-left: 10px;
-    padding-bottom: 20px;
     margin-top: 10px;
     background-color: #b4eaff;
     border-radius: 8px;

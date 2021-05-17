@@ -1,4 +1,19 @@
-<h2>My Pokemon</h2>
-<% @pokemons.each do |pokemon| %>
-  <p> <%= link_to pokemon.name , pokemon_path(pokemon) %> </p>
-<% end %>
+<div class="booking-container">
+  <h2> My Pokemon</h2>
+</div>
+<div class="booking-container">
+    <% @pokemons.each do |pokemon| %>
+      <%= link_to pokemon_path(pokemon) do %>
+        <div class="booking-card">
+          <div class="">
+            <%= cl_image_tag pokemon.photo.key if pokemon.photo.attached? %>
+          </div>
+          <div>
+            <h2> <%= pokemon.name %> </h2>
+            <h3> <%= pokemon.category %> </h3>
+            <p> £<%= pokemon.price %> </p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+</div>
