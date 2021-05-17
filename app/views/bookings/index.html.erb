@@ -1,4 +1,11 @@
-<h2>My bookings</h2>
-<% @bookings.each do |booking| %>
-  <p> <%= link_to booking.pokemon.name , booking_path(booking) %> </p>
-<% end %>
+<div class="booking-container">
+  <h2>My Bookings</h2>  
+    <% @bookings.each do |booking| %>
+      <div class="booking-card">
+      <%= link_to booking_path(booking) do %>
+        <h2> <%= booking.pokemon.name %> </h2>
+        <h3> <%= "#{booking.start_date.strftime('%d %B %Y')} - #{booking.start_date.strftime('%d %B %Y')} "%> </h3>
+      </div>
+    <% end %>
+    <% end %>
+</div>
