@@ -1,0 +1,10 @@
+    <% @bookings.each do |booking| %>
+      <%= link_to booking_path(booking) do %>
+      <div class="booking-card">
+        <div>
+          <h2> <%= booking.pokemon.name %> </h2>
+          <h3> <%= "#{booking.start_date.strftime('%d %B %Y')} - #{booking.start_date.strftime('%d %B %Y')} "%> </h3>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
