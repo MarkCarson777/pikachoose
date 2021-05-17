@@ -2,20 +2,19 @@
   <% @pokemons.each do |pokemon| %>
     <div class="pokemon-booking">
       <div class="front">
-        <div class="contents">
-          <%= link_to pokemon_path(pokemon) do %>
-            <%= cl_image_tag pokemon.photo.key if pokemon.photo.attached? %>
+        <div class="front-contents">
+          <%= cl_image_tag pokemon.photo.key if pokemon.photo.attached? %>
             <h2> <%= pokemon.name %> </h2>
-            <h3> <%= pokemon.category %> </h3>
-            <p> £<%= pokemon.price %> </p>
-          <% end %>
         </div>
       </div>
-      <div class="back">
-        <h2> <%= pokemon.name %> </h2>
-        <h3> <%= pokemon.category %> </h3>
-        <p> £<%= pokemon.price %> </p>
-      </div>
+      <%= link_to pokemon_path(pokemon) do %>
+        <div class="back"> 
+          <div class="back-contents">       
+            <h3> <%= pokemon.category %> </h3>
+            <h3> £<%= pokemon.price %> </h3>
+          </div>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>
