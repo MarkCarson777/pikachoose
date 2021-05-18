@@ -42,11 +42,16 @@
 }
 
 .pokemon-review {
-  padding-bottom: 32px;
+  margin-left: 32px;
+  padding-bottom: 24px;
+}
+
+.pokemon-review:first-child {
+  padding-top: 32px;
 }
 
 .pokemon-review:last-child {
-  padding-bottom: 0px;
+  padding-bottom: 32px;
 }
 
 #review-container {
