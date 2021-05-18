@@ -52,6 +52,11 @@
 #review-container {
   margin-top: 48px;
   margin-left: 16px;
+
+  img {
+    background-color: #b4eaff;
+    object-fit: cover;
+  }
 }
 
 .show-link {
