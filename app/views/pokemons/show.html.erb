@@ -2,26 +2,30 @@
 <div id="show-container">
   <div id="show-card">
     <%= cl_image_tag @pokemon.photo.key if @pokemon.photo.attached? %>
-    <div>
-      <h2><%= @pokemon.name %></h2>
-      <h2><%= @pokemon.category %></h2>
-      <h2>£<%= @pokemon.price %></h2>
-      <h2><%= @pokemon.address %></h2>
-      <div>
-        <%= image_tag("pokeball.png", :class => "pokeball") %>
-        <%= link_to "Check Availability", new_pokemon_booking_path(@pokemon), :class => "show-link" %>
+    <div class="flex">
+      <div class="pokemon-details">
+        <h2><%= @pokemon.name %></h2>
+        <h2><%= @pokemon.category %></h2>
+        <h2>£<%= @pokemon.price %></h2>
+        <h2><%= @pokemon.address %></h2>
       </div>
-      <div>
-        <%= image_tag("pokeball.png", :class => "pokeball") %>
-        <%= link_to "Edit Details", edit_pokemon_path(@pokemon), :class => "show-link" %>
-      </div>
-      <div>
-        <%= image_tag("pokeball.png", :class => "pokeball") %>
-        <%= link_to "Remove #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" }, :class => "show-link" %>
-      </div>
-      <div>
-        <%= image_tag("pokeball.png", :class => "pokeball") %>
-        <%= link_to "Back", pokemons_path, :class => "show-link"  %>
+      <div class="show-actions">
+        <div>
+          <%= image_tag("pokeball.png", :class => "pokeball") %>
+          <%= link_to "Check Availability", new_pokemon_booking_path(@pokemon), :class => "show-link" %>
+        </div>
+        <div>
+          <%= image_tag("pokeball.png", :class => "pokeball") %>
+          <%= link_to "Edit Details", edit_pokemon_path(@pokemon), :class => "show-link" %>
+        </div>
+        <div>
+          <%= image_tag("pokeball.png", :class => "pokeball") %>
+          <%= link_to "Remove #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" }, :class => "show-link" %>
+        </div>
+        <div>
+          <%= image_tag("pokeball.png", :class => "pokeball") %>
+          <%= link_to "Back", pokemons_path, :class => "show-link"  %>
+        </div>
       </div>
     </div>
   </div>
