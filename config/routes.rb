@@ -14,4 +14,8 @@ Rails.application.routes.draw do
   end
 
   resources :reviews, only: [ :show, :destroy, :index ]
+
+  resources :messages do
+    resources :comments
+  end
 end
