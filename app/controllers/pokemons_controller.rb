@@ -6,7 +6,8 @@ class PokemonsController < ApplicationController
     @markers = @pokemons.geocoded.map do |pokemon|
       {
         lat: pokemon.latitude,
-        lng: pokemon.longitude
+        lng: pokemon.longitude,
+        infoWindow: { content: render_to_string(partial: "info_window", locals: { pokemon: pokemon }) }
       }
     end
   end
