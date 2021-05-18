@@ -38,7 +38,7 @@ puts "creating Pokemon..."
 
 @users.each do |user|
   5.times do
-    index = rand(499)
+    index = rand(479)
     Pokemon.create!(
       name: Faker::Games::Pokemon.name,
       category: ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon"].sample,
