@@ -1,12 +1,20 @@
 <h1>Bookings#show</h1>
 <p>Find me in app/views/bookings/show.html.erb</p>
-<p><%= @booking.user.email %></p>
-<p><%= @booking.pokemon.name %></p>
-<p> <%= @booking.start_date.strftime("%m/%d") %> </p>
-<p> <%= @booking.end_date.strftime("%m/%d") %> </p>
-<p><%= link_to "Delete this booking",
-            booking_path(@booking),
-            method: :delete,
-            data: { confirm: "Are you sure?" } %></p>
-<p> <%= link_to "Edit this booking", edit_booking_path(@booking)  %> </p>
-<p> <%= link_to "Review this Pokemon", new_booking_review_path(@booking)  %> </p>
+<div class="booking-container">
+<div class="my-booking-card">
+  <%= cl_image_tag @booking.pokemon.photo.key if @booking.pokemon.photo.attached? %>
+      <div class="booking-content">
+        <h2><%= @booking.pokemon.name %></h2>
+        <p> <%= @booking.start_date.strftime("%m/%d") %> </p>
+        <p> <%= @booking.end_date.strftime("%m/%d") %> </p>
+        <div class="booking-links">
+          <%= link_to "Delete this booking",
+                      booking_path(@booking),
+                      method: :delete,
+                      data: { confirm: "Are you sure?" } %>
+          <%= link_to "Edit this booking", edit_booking_path(@booking)%>
+          <%= link_to "Review this Pokemon", new_booking_review_path(@booking)%>
+        </div>
+      </div>
+  </div>
+</div>
