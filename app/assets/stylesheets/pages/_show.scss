@@ -33,6 +33,20 @@
   h2 {
     padding-left: 16px;
   }
+
+  .pokeball {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  }
+}
+
+.pokemon-review {
+  padding-bottom: 32px;
+}
+
+.pokemon-review:last-child {
+  padding-bottom: 0px;
 }
 
 #review-container {
@@ -46,7 +60,7 @@
 
 $gutter: 20px;
 $caret-unit: 25px;
-$bubble-bg: #6acbf1;
+$bubble-bg: #30a7d7;
 $bubble-color: white;
 $cite-color: $bubble-color;
 
@@ -89,7 +103,7 @@ $cite-color: $bubble-color;
 }
 
 .list-group-item {
-  filter: drop-shadow(-1px -1px 2px #6acbf1) drop-shadow(1px 2px 2px #30a7d7);
+  filter: drop-shadow(-1px -1px 2px white) drop-shadow(1px 2px 2px white);
   // margin: 1rem;
   margin-bottom: ($gutter * 2);
   display: inline-block;
