@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# require 'geocoder'
 
 puts "cleaning database..."
 Pokemon.destroy_all
@@ -32,7 +33,8 @@ puts "creating Pokemon..."
       name: Faker::Games::Pokemon.name,
       category: ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon"].sample,
       price: Faker::Number.decimal_part(digits: 3),
-      user: user
+      user: user,
+      address: Faker::Address.postcode
     )
   end
 end
