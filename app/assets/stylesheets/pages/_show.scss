@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   overflow: scroll;
+  padding-bottom: 48px;
 }
 
 #show-card {
@@ -21,8 +22,12 @@
   border-width: 4px;
   border-radius: 16px;
   background-color: #30a7d7;
-  box-shadow: rgba(48, 167, 215, 0.25) 0px 54px 55px, rgba(48, 167, 215, 0.12) 0px -12px 30px, rgba(48, 167, 215, 0.12) 0px 4px 6px, rgba(48, 167, 215, 0.17) 0px 12px 13px, rgba(48, 167, 215, 0.09) 0px -3px 5px;
+  box-shadow: 2px 2px 16px #30a7d7;
   align-items: center;
+
+  a {
+    color: black;
+  }
 
   img {
     width: 300px;
@@ -55,8 +60,7 @@
 }
 
 #review-container {
-  margin-top: 48px;
-  margin-left: 16px;
+  margin-left: 32px;
 
   img {
     background-color: #b4eaff;
