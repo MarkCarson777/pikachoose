@@ -1,0 +1,4 @@
+<p><%= comment.content %></p>
+<p><em>posted by <%= comment.user.email %> <%= time_ago_in_words(comment.created_at) %> ago</em></p>
+<%= link_to "edit", edit_message_comment_path(comment.message, comment), :class => "message-links" %>
+<%= link_to "delete", message_comment_path(comment.message, comment), :class => "message-links", method: :delete, data: { confirm: "delete response?" }  %>
