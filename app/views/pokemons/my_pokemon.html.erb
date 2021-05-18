@@ -4,14 +4,14 @@
       <div class="front">
         <div class="front-contents">
           <%= cl_image_tag pokemon.photo.key if pokemon.photo.attached? %>
-            <h2> <%= pokemon.name %> </h2>
+            <h2><%= pokemon.name %></h2>
         </div>
       </div>
       <%= link_to pokemon_path(pokemon) do %>
         <div class="back"> 
           <div class="back-contents">       
-            <h3> <%= pokemon.category %> </h3>
-            <h3> £<%= pokemon.price %> </h3>
+            <h3>Type: <%= pokemon.category %></h3>
+            <h3>£<%= pokemon.price %></h3>
           </div>
         </div>
       <% end %>

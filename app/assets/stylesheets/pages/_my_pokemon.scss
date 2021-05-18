@@ -1,7 +1,7 @@
 
 .pokemon-booking {
   top: 50%;
-  transform: translateY(50%);
+  transform: translateY(40%);
   width: 250px;
   height: 350px;
   margin: 32px;
@@ -28,6 +28,7 @@
     border-style: solid;
     border-color: white;
     border-width: 1px;
+    padding: 8px;
   }
 
   .front {
