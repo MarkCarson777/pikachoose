@@ -5,7 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# require 'geocoder'
+require 'csv'
+
+address_array = []
+postcode_array = []
+csv_options = { headers: :first_row, header_converters: :symbol }
+CSV.foreach('./app/assets/data/uk-500.csv', csv_options) do |row|
+  address = "#{row[:address]}, #{row[:city]}"
+  address_array << address
+  postcode_array << row[:postal]
+end
 
 puts "cleaning database..."
 Pokemon.destroy_all
@@ -29,12 +38,14 @@ puts "creating Pokemon..."
 
 @users.each do |user|
   5.times do
+    index = rand(479)
     Pokemon.create!(
       name: Faker::Games::Pokemon.name,
       category: ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon"].sample,
       price: Faker::Number.decimal_part(digits: 3),
       user: user,
-      address: Faker::Address.postcode
+      street_address: address_array[index],
+      address: "#{postcode_array[index]}, UK"
     )
   end
 end
