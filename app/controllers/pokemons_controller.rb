@@ -6,7 +6,8 @@ class PokemonsController < ApplicationController
     @markers = @pokemons.geocoded.map do |pokemon|
       {
         lat: pokemon.latitude,
-        lng: pokemon.longitude
+        lng: pokemon.longitude,
+        infoWindow: { content: render_to_string(partial: "info_window", locals: { pokemon: pokemon }) }
       }
     end
   end
@@ -49,6 +50,6 @@ class PokemonsController < ApplicationController
   end
 
   def pokemon_params
-    params.require(:pokemon).permit(:name, :category, :price, :photo)
+    params.require(:pokemon).permit(:name, :category, :price, :address, :photo)
   end
 end

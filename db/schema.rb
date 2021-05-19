@@ -9,8 +9,10 @@
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
-
-ActiveRecord::Schema.define(version: 2021_05_18_211749) do
+=======
+ActiveRecord::Schema.define(version: 2021_05_18_200229) do
+>>>>>>> 4ff3fb52470630a48ba67b6c1dde4a74568a4fb9
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +77,7 @@ ActiveRecord::Schema.define(version: 2021_05_18_211749) do
     t.float "latitude"
     t.float "longitude"
     t.string "address"
+    t.string "street_address"
     t.index ["user_id"], name: "index_pokemons_on_user_id"
   end
 
