@@ -34,6 +34,6 @@ private
   end
 
   def review_params
-    params.require(:review).permit(:booking_id, :content)
+    params.require(:review).permit(:booking_id, :content, :rating)
   end
 end

@@ -12,6 +12,7 @@
 =======
 ActiveRecord::Schema.define(version: 2021_05_18_200229) do
 >>>>>>> 4ff3fb52470630a48ba67b6c1dde4a74568a4fb9
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,6 +86,7 @@ ActiveRecord::Schema.define(version: 2021_05_18_200229) do
     t.bigint "booking_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "rating"
     t.index ["booking_id"], name: "index_reviews_on_booking_id"
   end
 
