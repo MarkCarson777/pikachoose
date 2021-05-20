@@ -39,25 +39,25 @@
         <div>
           <li class="rating">
             <% if review.rating < 2 %>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i>
             <% elsif review.rating < 3 %>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             <% elsif review.rating < 4 %>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             <% elsif review.rating < 5 %>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             <% elsif review.rating == 5 %>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             <% end %>
           </li>
           <li class="list-group-item"><%= review.content %></li>
