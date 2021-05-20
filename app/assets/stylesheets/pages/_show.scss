@@ -1,14 +1,26 @@
-#container {
-  overflow: scroll;
-  padding-bottom: 96px;
-}
-
 #show-container {
   margin-top: 32px;
   display: flex;
   justify-content: center;
-  overflow: scroll;
   padding-bottom: 48px;
+}
+
+.pokemon-review {
+  margin-left: 64px;
+  vertical-align: middle;
+}
+
+.pokemon-details {
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  padding-right: 16px;
+}
+
+.show-actions {
+  position: absolute;
+  top: 24%;
+  left: 65%;
 }
 
 #show-card {
@@ -16,7 +28,7 @@
   margin-top: 16px;
   margin-left: 16px;
   margin-right: 16px;
-  display: flex;
+  display: inline-block;
   border-style: solid;
   border-color: white;
   border-width: 4px;
@@ -24,19 +36,18 @@
   background-color: #30a7d7;
   box-shadow: 2px 2px 16px #30a7d7;
   align-items: center;
+  position: relative;
 
   .flex {
     display: flex;
-  }
-
-  .show-actions {
-
   }
 
   a {
     color: black;
     font-family: 'Exo', sans-serif;
     font-size: 24px;
+    text-decoration: none;
+    vertical-align: middle;
   }
 
   img {
@@ -45,8 +56,15 @@
     padding: 16px;
   }
 
+  h1 {
+    padding-left: 16px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+  }
+
   h2 {
     padding-left: 16px;
+    font-family: 'Exo', sans-serif;
   }
 
   .pokeball {
@@ -56,30 +74,23 @@
   }
 }
 
-.pokemon-review {
-  margin-left: 32px;
-  padding-bottom: 24px;
-}
+.review-header {
+  margin-left: 64px;
 
-.pokemon-review:first-child {
-  padding-top: 32px;
-}
-
-.pokemon-review:last-child {
-  padding-bottom: 32px;
-}
-
-#review-container {
-  margin-left: 32px;
-
-  img {
-    background-color: #b4eaff;
-    object-fit: cover;
+  h1 {
+    font-family: 'Exo', sans-serif;
   }
 }
 
-.show-link {
-  bottom: 0;
+#review-container {
+  margin-top: 56px;
+  display: flex;
+  padding-right: 16px;
+  overflow: scroll;
+
+  img {
+    object-fit: cover;
+  }
 }
 
 $gutter: 20px;
@@ -128,8 +139,6 @@ $cite-color: $bubble-color;
 
 .list-group-item {
   filter: drop-shadow(-1px -1px 2px white) drop-shadow(1px 2px 2px white);
-  // margin: 1rem;
-  margin-bottom: ($gutter * 2);
   display: inline-block;
   padding: 1.5rem 2rem;
   position: relative;
@@ -138,6 +147,8 @@ $cite-color: $bubble-color;
   font-weight: 400;
   background: $bubble-bg;
   color: $bubble-color;
+  white-space: nowrap;
+  text-align: center;
 
   &::before {
     @include caret(bottom, ($caret-unit / 2), $bubble-bg);
@@ -166,6 +177,8 @@ $cite-color: $bubble-color;
 
 .rating {
   list-style-type: none;
+  text-align: center;
+  padding-top: 4px;
 }
 
 .fas {
