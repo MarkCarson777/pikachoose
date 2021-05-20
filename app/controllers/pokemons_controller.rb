@@ -8,6 +8,7 @@ class PokemonsController < ApplicationController
 
   def my_pokemon
     @pokemons = Pokemon.where(user: current_user)
+    @markers = pokemon_markers(@pokemons)
   end
 
   def show
