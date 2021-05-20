@@ -2,17 +2,13 @@ h2 {
   font-family: 'Exo', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 .booking-card {
   background-color: #30a7d7;
   margin-bottom: 18px;
   border-radius: 8px;
   border-style: solid;
   border-color: white;
-  display: flex;
+  // display: flex;
 
   img {
     height: 200px;
@@ -49,18 +45,27 @@ a {
   a {
     text-decoration: none;
     margin:10px;
+    color: white;
   }
-
-
 }
 
 .booking-container {
   margin: 10px;
-  
+  overflow:scroll;
+  padding-bottom: 80px
+   
+
 }
 
-.booking-card:hover {
-  transition: 0.4s;
+.new-booking-container {
+  width: 500px; 
+  margin:10px auto;
+  padding: 10px;
+  background: #30a7d7;
+  border-style: solid;
+  border-color: white;
+  border-radius: 16px;
   box-shadow: rgba(48, 167, 215, 0.25) 0px 54px 55px, rgba(48, 167, 215, 0.12) 0px -12px 30px, rgba(48, 167, 215, 0.12) 0px 4px 6px, rgba(48, 167, 215, 0.17) 0px 12px 13px, rgba(48, 167, 215, 0.09) 0px -3px 5px;
-  opacity: 0.8;
+  color: white;
+
 }

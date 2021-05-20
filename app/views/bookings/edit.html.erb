@@ -1,7 +1,8 @@
-<h1>Bookings#edit</h1>
-<p>Find me in app/views/bookings/edit.html.erb</p>
-<%= simple_form_for [ @pokemon, @booking ] do |f| %>
-  <%= f.date_field :start_date%>
-  <%= f.date_field :end_date %>
-  <%= f.button :submit %>
-<% end %>
+
+
+<div class="new-booking-container">
+<h2> <%="You've booking #{@booking.pokemon.name} from #{@booking.start_date.strftime('%d %B %Y')} to #{@booking.start_date.strftime('%d %B %Y')}"%>  </h2>
+  <p>Change the dates below:</p>
+  <%= render  "components/booking-form" %>
+</div>
+

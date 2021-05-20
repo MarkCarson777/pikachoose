@@ -3,17 +3,12 @@ class PokemonsController < ApplicationController
 
   def index
     @pokemons = Pokemon.all
-    @markers = @pokemons.geocoded.map do |pokemon|
-      {
-        lat: pokemon.latitude,
-        lng: pokemon.longitude,
-        infoWindow: { content: render_to_string(partial: "info_window", locals: { pokemon: pokemon }) }
-      }
-    end
+    @markers = pokemon_markers(@pokemons)
   end
 
   def my_pokemon
     @pokemons = Pokemon.where(user: current_user)
+    @markers = pokemon_markers(@pokemons)
   end
 
   def show
@@ -51,5 +46,15 @@ class PokemonsController < ApplicationController
 
   def pokemon_params
     params.require(:pokemon).permit(:name, :category, :price, :address, :photo)
+  end
+
+  def pokemon_markers(pokemons)
+    pokemons.geocoded.map do |pokemon|
+      {
+        lat: pokemon.latitude,
+        lng: pokemon.longitude,
+        infoWindow: { content: render_to_string(partial: "info_window", locals: { pokemon: pokemon }) }
+      }
+    end
   end
 end

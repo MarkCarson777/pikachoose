@@ -1,24 +1,74 @@
-<div id="show-container">
-  <div id="show-card">
-    <%= cl_image_tag @pokemon.photo.key if @pokemon.photo.attached? %>
-    <div>
-      <h2><%= @pokemon.name %></h2>
-      <h3><%= @pokemon.category %></h3>
-      <p>£<%= @pokemon.price %></p>
-      <%= link_to "Book #{@pokemon.name}", new_pokemon_booking_path(@pokemon), :class => "show-link" %>
-      <%= link_to "Edit #{@pokemon.name}", edit_pokemon_path(@pokemon), :class => "show-link" %>
-      <%= link_to "Delete #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" }, :class => "show-link" %>
-      <%= link_to "Back to list", pokemons_path, :class => "show-link"  %>
+<div id="container">
+  <div id="show-container">
+    <div id="show-card">
+      <div class="flex">
+        <% if @pokemon.photo.attached? %>
+          <%= cl_image_tag pokemon.photo.key %>
+        <% else %>
+        <%= [image_tag("pikachu.png"), image_tag("eevee.png"), image_tag("pachi.png"), image_tag("snorlax.png"), image_tag("bulbsaur.png"), image_tag("charizard.png")].sample %>
+        <% end %> 
+        <div class="pokemon-details">
+          <h1><%= @pokemon.name %></h1>
+          <h2><%= @pokemon.category %></h2>
+          <h2>£<%= @pokemon.price %></h2>
+          <h2><%= @pokemon.address %></h2>
+        </div>
+        <div class="show-actions">
+          <div>
+            <%= image_tag("pokeball.png", :class => "pokeball") %>
+            <%= link_to "Check Availability", new_pokemon_booking_path(@pokemon), :class => "show-link" %>
+          </div>
+          <div>
+            <%= image_tag("pokeball.png", :class => "pokeball") %>
+            <%= link_to "Edit Details", edit_pokemon_path(@pokemon), :class => "show-link" %>
+          </div>
+          <div>
+            <%= image_tag("pokeball.png", :class => "pokeball") %>
+            <%= link_to "Remove #{@pokemon.name}", pokemon_path(@pokemon), method: :delete, data: { confirm: "Are you sure?" }, :class => "show-link" %>
+          </div>
+          <div>
+            <%= image_tag("pokeball.png", :class => "pokeball") %>
+            <%= link_to "Back", pokemons_path, :class => "show-link"  %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-<div id="review-container">
-  <ul class="list-group">
+  <div class="review-header">
+    <h1>Reviews (<%= Review.count %>)</h1>
+  </div>
+  <div id="review-container">
     <% @pokemon.reviews.each do |review| %>
-      <%= link_to image_tag("ketchum.png", alt: "pokemon-logo", :class => "avatar-large") %>
-      <li class="list-group-item"><%= review.content %></li>
-
+      <div class="pokemon-review">
+        <div class="list-group-item">
+          <%= review.content %>
+          <div class="rating">
+          <% if review.rating < 2 %>
+            <i class="fas fa-star"></i>
+          <% elsif review.rating < 3 %>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          <% elsif review.rating < 4 %>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          <% elsif review.rating < 5 %>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          <% elsif review.rating == 5 %>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          <% end %>
+        </div>     
+        </div>
+        <%= image_tag("https://res.cloudinary.com/markcarson121/image/upload/v1621371719/ketchum_diestp.png", :class => "avatar-large") %>
+      </div>
     <% end %>
-  </ul>
+  </div>
+
 </div>

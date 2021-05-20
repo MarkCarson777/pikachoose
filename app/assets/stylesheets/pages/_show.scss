@@ -1,15 +1,186 @@
 #show-container {
-  background-color: lightblue;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+
+.pokemon-review {
+  margin-left: 64px;
+  vertical-align: middle;
+}
+
+.pokemon-details {
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  padding-right: 16px;
+}
+
+.show-actions {
+  position: absolute;
+  top: 24%;
+  left: 65%;
 }
 
 #show-card {
-  display: flex;
+  width: 800px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: inline-block;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+  border-radius: 16px;
+  background-color: #30a7d7;
+  box-shadow: 2px 2px 16px #30a7d7;
+  align-items: center;
+  position: relative;
+
+  .flex {
+    display: flex;
+  }
+
+  a {
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    padding: 16px;
+  }
+
+  h1 {
+    padding-left: 16px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+  }
+
+  h2 {
+    padding-left: 16px;
+    font-family: 'Exo', sans-serif;
+  }
+
+  .pokeball {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  }
+}
+
+.review-header {
+  margin-left: 64px;
+
+  h1 {
+    font-family: 'Exo', sans-serif;
+  }
 }
 
 #review-container {
-  margin-top: 16px;
+  margin-top: 56px;
+  display: flex;
+  padding-right: 16px;
+  overflow: scroll;
+
+  img {
+    object-fit: cover;
+  }
 }
 
-.show-link {
-  bottom: 0;
+$gutter: 20px;
+$caret-unit: 25px;
+$bubble-bg: #30a7d7;
+$bubble-color: white;
+$cite-color: $bubble-color;
+
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+    'top': 'bottom',
+    'right': 'left',
+    'bottom': 'top',
+    'left': 'right',
+    'center': 'center',
+    'ltr': 'rtl',
+    'rtl': 'ltr'
+  );
+
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+    }
+  }
+
+  @return $opposite-directions;
+}
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin caret($point, $border-width, $color) {
+  $opposite: opposite-direction($point);
+  border: $border-width solid transparent;
+  border-#{$opposite}: $border-width solid $color;
+  border-#{$point}: 0;
+  height: 0;
+  width: 0;
+}
+
+.list-group-item {
+  filter: drop-shadow(-1px -1px 2px white) drop-shadow(1px 2px 2px white);
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  position: relative;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: $bubble-bg;
+  color: $bubble-color;
+  white-space: nowrap;
+  text-align: center;
+
+  &::before {
+    @include caret(bottom, ($caret-unit / 2), $bubble-bg);
+    border-top-width: $caret-unit;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 3rem;
+    bottom: -$caret-unit;
+    transform-origin: center;
+    transform: rotate(90deg) skew(-(strip-unit($caret-unit))+deg) translateY($caret-unit / 1.5);
+  }
+}
+
+
+.list-group-item cite {
+  position: absolute;
+  bottom: -2rem;
+  left: 4.5rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: $cite-color;
+}
+
+.rating {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.fas {
+  color: #ffd823;
 }
