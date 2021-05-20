@@ -8,7 +8,7 @@ h2 {
   border-radius: 8px;
   border-style: solid;
   border-color: white;
-  display: flex;
+  // display: flex;
 
   img {
     height: 200px;
@@ -51,6 +51,9 @@ h2 {
 
 .booking-container {
   margin: 10px;
+  overflow:scroll;
+  padding-bottom: 80px
+   
 
 }
 
