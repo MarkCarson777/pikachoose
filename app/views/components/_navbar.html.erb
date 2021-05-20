@@ -14,9 +14,12 @@
       <li>
       <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
       </li>
+      <li>
+      <img class="avatar-bordered" alt="avatar-bordered" src="https://res.cloudinary.com/markcarson121/image/upload/v1621540616/misty_gt2mmm.png" />
+      </li>
     <% else %>
       <li>
-      <%= link_to('Login', new_user_session_path) %>  
+      <%= link_to('Login', new_user_session_path) %> 
       </li>
     <% end %>
   <!--   <li>
