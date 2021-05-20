@@ -2,7 +2,11 @@
   <div id="show-container">
     <div id="show-card">
       <div class="flex">
-      <%= cl_image_tag @pokemon.photo.key if @pokemon.photo.attached? %>
+        <% if @pokemon.photo.attached? %>
+          <%= cl_image_tag pokemon.photo.key %>
+        <% else %>
+        <%= [image_tag("pikachu.png"), image_tag("eevee.png"), image_tag("pachi.png"), image_tag("snorlax.png"), image_tag("bulbsaur.png"), image_tag("charizard.png")].sample %>
+        <% end %> 
         <div class="pokemon-details">
           <h1><%= @pokemon.name %></h1>
           <h2><%= @pokemon.category %></h2>

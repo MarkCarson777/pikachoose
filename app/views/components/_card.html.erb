@@ -6,7 +6,7 @@
             <% if pokemon.photo.attached? %>
               <%= cl_image_tag pokemon.photo.key %>
             <% else %>
-              <%= image_tag("pikachu.png", :class => "pokeball") %>
+              <%= [image_tag("pikachu.png", :class => "pokeball"), image_tag("eevee.png", :class => "pokeball"), image_tag("pachi.png", :class => "pokeball"), image_tag("snorlax.png", :class => "pokeball"), image_tag("bulbsaur.png", :class => "pokeball"), image_tag("charizard.png", :class => "pokeball")].sample %>
             <% end %>  
           </div>
           <h2> <%= pokemon.name %> </h2>
