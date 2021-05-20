@@ -67,4 +67,14 @@ puts "creating bookings..."
 end
 
 puts "created bookings!"
+
+puts "creating battle messages..."
+
+first_message = { title: "Heading to Pewter City Gym", description: "Anyone up for a battle? I have 3 great pokemon that I'm looking to evolve soon. TIA.", user: User.last  }
+second_message = { title: "Looking for a Water Pokemon Fight", description: "Hi, I am a water pokemon specialist, looking for others who would be happy to give me battle experience.", user: User.last }
+
+[first_message, second_message].each do |attributes|
+  message = Message.create!(attributes)
+end
+
 puts "all done - wahey!"
