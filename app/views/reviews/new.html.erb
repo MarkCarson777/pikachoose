@@ -1,7 +1,8 @@
-<h1>Review#new</h1>
-<p>Find me in app/views/reviews/new.html.erb</p>
-<%= simple_form_for [ @booking, @review ] do |f| %>
-  <%= f.input :rating %>
-  <%= f.input :content %>
-  <%= f.button :submit %>
+<div class="battle-container">
+  <h2>Review-a-mon?</h2>  
+    <%= simple_form_for [ @booking, @review ] do |f| %>
+    <%= f.input :rating %>
+    <%= f.input :content %>
+    <%= f.button :submit, class: "btn-pokemon mt-2 mb-2 mr-sm-2" %>
 <% end %>
+</div>
