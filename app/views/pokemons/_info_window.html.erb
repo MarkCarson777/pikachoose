@@ -1,2 +1,2 @@
-<h2><%= pokemon.name %></h2>
+<h2><%= link_to pokemon.name, pokemon_path(pokemon), :class => "show-link" %></h2>
 <p><%= pokemon.address %></p>
