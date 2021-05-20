@@ -1,10 +1,11 @@
-<h1>Pokemons#new</h1>
-<p>Find me in app/views/pokemons/new.html.erb</p>
-<%= simple_form_for(@pokemon) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :category, :collection => %w[Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon] %>
-  <%= f.input :price %>
-  <%= f.input :address, label: "Enter Your Postcode" %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+<div class="new-booking-container">
+  <h2>Rent-a-mon?</h2>  
+      <%= simple_form_for(@pokemon) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :category, :collection => %w[Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon] %>
+        <%= f.input :price %>
+        <%= f.input :address, label: "Enter Your Postcode", class: "mb-2"%>
+        <%= f.input :photo, as: :file, class: "mt-2"%>
+        <%= f.button :submit, class: "btn btn-primary mt-2 mb-2 mr-sm-2 text-light"%>
+      <% end %>
+</div>
