@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_200229) do
+ActiveRecord::Schema.define(version: 2021_05_20_185953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,8 +49,8 @@ ActiveRecord::Schema.define(version: 2021_05_18_200229) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
-    t.bigint "message_id", null: false
     t.bigint "user_id", null: false
+    t.bigint "message_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["message_id"], name: "index_comments_on_message_id"
@@ -60,9 +60,10 @@ ActiveRecord::Schema.define(version: 2021_05_18_200229) do
   create_table "messages", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "pokemons", force: :cascade do |t|
@@ -104,6 +105,7 @@ ActiveRecord::Schema.define(version: 2021_05_18_200229) do
   add_foreign_key "bookings", "users"
   add_foreign_key "comments", "messages"
   add_foreign_key "comments", "users"
+  add_foreign_key "messages", "users"
   add_foreign_key "pokemons", "users"
   add_foreign_key "reviews", "bookings"
 end
