@@ -1,4 +1,9 @@
-<p><%= comment.content %></p>
-<p><em>posted by <%= comment.user.email %> <%= time_ago_in_words(comment.created_at) %> ago</em></p>
-<%= link_to "edit", edit_message_comment_path(comment.message, comment), :class => "message-links" %>
-<%= link_to "delete", message_comment_path(comment.message, comment), :class => "message-links", method: :delete, data: { confirm: "delete response?" }  %>
+<div class="battle-message">
+  <h2><%= comment.content %></h2>
+  <small><%= link_to "Edit", edit_message_comment_path(comment.message, comment),class: "text-dark"  %> </small>
+  <small> <%= link_to "Delete", message_comment_path(comment.message, comment),class: "text-dark", method: :delete, data: { confirm: "delete response?" }  %> </small>  
+
+</div>
+<div class="battle-user">
+  <p><em>posted by <%= comment.user.email %> <%= time_ago_in_words(comment.created_at) %> ago</em></p>
+</div>
