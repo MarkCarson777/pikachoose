@@ -1,9 +1,12 @@
-<h1>Edit</h1>
-<%= simple_form_for(@pokemon) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :category, :collection => %w[Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon] %>
-  <%= f.input :price %>
-  <%= f.input :address, label: "enter your postcode" %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+<div class="new-booking-container">
+  <h2>Change-a-mon</h2>  
+  <%= simple_form_for(@pokemon) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :category, :collection => %w[Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon] %>
+    <%= f.input :price %>
+    <%= f.input :address, label: "enter your postcode" %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, class: "btn-pokemon mt-2 mb-2 mr-sm-2" %>
+    <%= link_to "Back", root_path, class: "btn-pokemon py-2 px-3 mt-2 mb-2 mr-sm-2" %>
+  <% end %>
+</div>
