@@ -35,7 +35,7 @@
     </div>
   </div>
   <div class="review-header">
-    <h1>Reviews (<%= Review.count %>)</h1>
+    <h1>Reviews (<%= @pokemon.reviews.count %>)</h1>
   </div>
   <div id="review-container">
     <% @pokemon.reviews.each do |review| %>
