@@ -1,8 +1,9 @@
 <div class="new-booking-container">
   <h2>Add a review</h2>  
     <%= simple_form_for [ @booking, @review ] do |f| %>
-    <%= f.input :rating %>
+    <%= f.input :rating, label: "Rating out of 5" %>
     <%= f.input :content %>
     <%= f.button :submit, "Add your review", class: "btn-pokemon mt-2 mb-2 mr-sm-2" %>
+    <%= link_to "Back", bookings_path, class: "btn btn-pokemon mt-2 mb-2 mr-sm-2" %>
 <% end %>
 </div>
