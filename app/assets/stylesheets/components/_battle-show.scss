@@ -1,0 +1,40 @@
+.battle-show-container {
+  width: 700px; 
+  margin:5px auto;
+  padding: 10px;
+  background: #30a7d7;
+  border-style: solid;
+  border-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(48, 167, 215, 0.25) 0px 54px 55px, rgba(48, 167, 215, 0.12) 0px -12px 30px, rgba(48, 167, 215, 0.12) 0px 4px 6px, rgba(48, 167, 215, 0.17) 0px 12px 13px, rgba(48, 167, 215, 0.09) 0px -3px 5px;
+  color: white;
+
+  h2 {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+.battle-user {
+  padding: 5 10 10 10;
+  margin: 5px;
+  
+  h2 {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.battle-message {
+  background: white;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 16px;
+
+  h2 {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+  }
+}
