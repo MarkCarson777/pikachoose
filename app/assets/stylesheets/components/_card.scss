@@ -66,3 +66,12 @@
   transition: 0.4s;
   box-shadow: rgba(48, 167, 215, 0.25) 0px 54px 55px, rgba(48, 167, 215, 0.12) 0px -12px 30px, rgba(48, 167, 215, 0.12) 0px 4px 6px, rgba(48, 167, 215, 0.17) 0px 12px 13px, rgba(48, 167, 215, 0.09) 0px -3px 5px;
 }
+
+.img-map-card {
+  background-colour: white;
+  width: 220px;
+  img {
+    width: 200px;
+    height: 200px
+  }
+}
