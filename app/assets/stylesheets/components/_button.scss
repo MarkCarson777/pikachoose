@@ -1,16 +1,18 @@
 .btn-pokemon {
-   background: #30a7d7;
-   border-color: white;
+  font-family: 'Exo', sans-serif;
+   font-size: 24px;
+   background: #FFCB05;
+   border-color: #395BA6;
    border-style: solid;
-   border-width: 3px;
+   border-width: 5px;
    border-radius: 16px;
-   color: white;
+   color: #395BA6;
    font-weight: bold;
    text-decoration: none;
 }
 
 .btn-pokemon:hover {
-  background: white;
-  color: #30a7d7;
+  background: #30a7d7;
+  color: white;
 }
 
