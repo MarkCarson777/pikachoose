@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     @comment = @message.comments.create(comment_params)
     @comment.user_id = current_user.id
     if @comment.save
-      redirect_to message_path(@message)
+      redirect_to message_path(@message, anchor: "comment-#{@comment.id}")
     else
       render 'new'
     end

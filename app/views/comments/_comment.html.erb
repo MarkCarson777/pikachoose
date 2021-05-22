@@ -1,5 +1,5 @@
 <div class="battle-message">
-  <h2><%= comment.content %></h2>
+  <h2 id="comment-<%= comment.id %>"><%= comment.content %></h2>
   <small><%= link_to "Edit", edit_message_comment_path(comment.message, comment),class: "text-dark"  %> </small>
   <small> <%= link_to "Delete", message_comment_path(comment.message, comment),class: "text-dark", method: :delete, data: { confirm: "delete response?" }  %> </small>  
 
