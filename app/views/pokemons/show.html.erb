@@ -37,34 +37,35 @@
   <div class="review-header">
     <h1>Reviews (<%= @pokemon.reviews.count %>)</h1>
   </div>
+
   <div id="review-container">
     <% @pokemon.reviews.each do |review| %>
       <div class="pokemon-review">
         <div class="list-group-item">
           <%= review.content %>
           <div class="rating">
-          <% if review.rating < 2 %>
-            <i class="fas fa-star"></i>
-          <% elsif review.rating < 3 %>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          <% elsif review.rating < 4 %>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          <% elsif review.rating < 5 %>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          <% elsif review.rating == 5 %>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          <% end %>
-        </div>     
+            <% if review.rating < 2 %>
+              <i class="fas fa-star"></i>
+            <% elsif review.rating < 3 %>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            <% elsif review.rating < 4 %>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            <% elsif review.rating < 5 %>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            <% elsif review.rating == 5 %>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            <% end %>
+          </div>     
         </div>
         <%= image_tag("https://res.cloudinary.com/markcarson121/image/upload/v1621540616/misty_gt2mmm.png", :class => "avatar-large") %>
       </div>

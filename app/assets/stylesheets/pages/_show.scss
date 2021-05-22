@@ -11,24 +11,22 @@
 }
 
 .pokemon-details {
-  position: absolute;
-  top: 18%;
-  left: 38%;
-  padding-right: 16px;
+  padding-right: 32px;
+  white-space: nowrap;
+  margin: auto auto;
 }
 
 .show-actions {
-  position: absolute;
-  top: 24%;
-  left: 65%;
+  padding-right: 32px;
+  white-space: nowrap;
+  margin: auto auto;
 }
 
 #show-card {
-  width: 800px;
+  width: auto;
   margin-top: 16px;
   margin-left: 16px;
   margin-right: 16px;
-  display: inline-block;
   border-style: solid;
   border-color: white;
   border-width: 4px;
@@ -36,7 +34,6 @@
   background-color: #30a7d7;
   box-shadow: 2px 2px 16px #30a7d7;
   align-items: center;
-  position: relative;
 
   .flex {
     display: flex;
