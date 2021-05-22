@@ -9,13 +9,14 @@
       <div class="battle-card">
         <%= link_to message_path(message) do %>
           <h1><%= message.title %></h1>
-          <h3><%= message.description %></h3>
+          <h4><%= message.description %></h4>
+          <em><%= message.user.email %></em>
           <div>
-            <p><em><%= message.user.email %> <%= time_ago_in_words(message.created_at) %></em></p>
+            <p><strong><em>Posted <%= time_ago_in_words(message.created_at) %> ago</em></strong></p>
           </div>
         <% end %>
       </div>  
-      <%= image_tag("pokeball.png", :class => "battle-pokeball") %>
+      <%= link_to image_tag("pokeball.png", :class => "battle-pokeball"), new_message_path %>
     <% end %>
   </div>
 
