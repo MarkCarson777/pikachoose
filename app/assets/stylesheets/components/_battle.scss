@@ -37,10 +37,11 @@
 .flex {
   padding-top: 12px;
   display: flex;
+  justify-content: flex-end;
 }
 
 .battle-card {
-  width: 1000px;
+  width: 1100px;
   display: inline-block;
   padding-top: 12px;
   padding-bottom: 8px;
