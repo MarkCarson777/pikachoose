@@ -5,11 +5,20 @@
 .mapboxgl-popup-content {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+
+  a:focus {
+    outline: 0 !important;
+  }
 }
 
+
 #map {
-  height: 100vh;
   position: sticky;
   top: 96px;
   border-radius: 8px;
+  margin-right: 16px;
 }

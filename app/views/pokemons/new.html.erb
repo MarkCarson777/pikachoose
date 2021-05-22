@@ -5,7 +5,7 @@
         <%= f.input :category, :collection => %w[Normal Fire Water Grass Electric Ice Fighting Poison Ground Flying Psychic Bug Rock Ghost Dragon] %>
         <%= f.input :price %>
         <%= f.input :address, label: "Enter Your Postcode", class: "mb-2"%>
-        <%= f.input :photo, as: :file, class: "mt-3"%>
+        <%= f.input_field :photo, as: :file, class: "mt-3"%>
         <%= f.button :submit, "Add Pokemon", class: "btn-pokemon mt-2 mb-2 mr-sm-2" %>
       <% end %>
 </div>
