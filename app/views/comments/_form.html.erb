@@ -1,4 +1,6 @@
 <%= simple_form_for([@message, @message.comments.build]) do |f| %>
   <%= f.input :content, label: "Type your reply:" %>
   <%= f.button :submit, class: "btn-pokemon mt-2 mb-2 mr-sm-2"  %>
+  <%= link_to "Strengthen Your Team!", pokemons_path, class: "btn-pokemon py-2 px-3 mt-2 mb-2 mr-sm-2"  %>
+  <%= link_to "Cancel battle", message_path(@message), class: "btn-pokemon py-2 px-3 mt-2 mb-2 mr-sm-2" , method: :delete, data: { confirm: "Cancel this battle?" }  %>
 <% end %>

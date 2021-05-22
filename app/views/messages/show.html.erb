@@ -5,16 +5,7 @@
     <div class="battle-user">
         <p><em>posted by <%= @message.user.email %>, <%= time_ago_in_words(@message.created_at) %> ago</em></p>    
     </div>
-    
-    <div>
-        <%= link_to "Edit your message", edit_message_path(@message), :class => "message-links" %>
-        <%= link_to "Back", messages_path, :class => "message-links" %>
-        <%= link_to "Cancel the battle", message_path(@message), :class => "message-links", method: :delete, data: { confirm: "Cancel this battle?" }  %>
-    </div>
-    <div>
         <h3>Responses:</h3>
         <%= render @message.comments %>
         <%= render 'comments/form' %>
-    </div>
-    <%= link_to "Strengthen Your Team!", pokemons_path %>
 </div>
